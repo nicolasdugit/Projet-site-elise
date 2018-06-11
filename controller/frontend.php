@@ -2,5 +2,5 @@
 
 function showHomePage()
 {
-	require('view/frontend/hoemPage.php');
+	require('view/frontend/homePage.php');
 }
