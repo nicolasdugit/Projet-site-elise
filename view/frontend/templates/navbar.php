@@ -5,7 +5,7 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<div class="form-group">
-						<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
+						<input type="text" class="form-control" id="search" placeholder="Que recherchez vous ?">
 						<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
 					</div>
 				</div>
@@ -13,13 +13,13 @@
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="menu.html">menus</a></li>
-						<li><a href="specialties.html">specialties</a></li>
-						<li><a href="reservation.html">Reservation</a></li>
-						<li><a href="blog.html">Blog</a></li>
-						<li><a href="about.html">About us</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class="active"><a href="index.php">Accueil</a></li>
+						<li><a href="index.php">Les Plats Cuisinés</a></li>
+						<li><a href="index.php">Sur le Banc</a></li>
+						<li><a href="index.php">Les Plateaux</a></li>
+						<li><a href="index.php">Notre Équipe</a></li>
+						<li><a href="index.php">Nos Recettes</a></li>
+						<li><a href="index.php">Nous Contacter</a></li>
 					</ul>
 				</div>
 			</div>
