@@ -16,7 +16,7 @@ function notreBancPage()
 }
 function platCuisinePage()
 {
-	require('view/frontend/platsCuisine.php');
+	require('view/frontend/platsCuisineView.php');
 }
 function nosPlateauxPage()
 {
