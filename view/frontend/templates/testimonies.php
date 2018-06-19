@@ -1,9 +1,9 @@
-<div class="colorlib-testimony" style="background-image: url(public/images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
+<div class="colorlib-testimony" style="background-image: url(public/images/exterieur2.jpg);" data-stellar-background-ratio="0.5">
 	<div class="overlay"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-				<h2>Our Customer Says</h2>
+				<h2>Ce que disent nos clients</h2>
 			</div>
 		</div>
 		<div class="row animate-box">
@@ -12,8 +12,8 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="testimony">
 							<blockquote>
-								<p>"A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-								<span>" &mdash; George Brooks</span>
+								<p>"Merci à Elise pour ses conseils tres precieux, en tant que chef de cuisine à domicile elle sait très bien me conseiller.</p>
+								<span>" &mdash; Domi</span>
 							</blockquote>
 						</div>
 					</div>
@@ -22,8 +22,8 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="testimony">
 							<blockquote>
-								<p>"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-								<span>" &mdash; Daniel Foster</span>
+								<p>"Poissons et crustacés de qualités. Conseils sur les préparations des produits et le personnelle est agréable et souriant!</p>
+								<span>" &mdash; Emilie</span>
 							</blockquote>
 						</div>
 					</div>
@@ -32,8 +32,8 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="testimony">
 							<blockquote>
-								<p>"When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-								<span>" &mdash; Liam Jenkins</span>
+								<p>"De la qualité, du choix un super accueil de la passion et des produits maisons, que demander de plus !</p>
+								<span>" &mdash; Jean</span>
 							</blockquote>
 						</div>
 					</div>

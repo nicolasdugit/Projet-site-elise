@@ -1,4 +1,4 @@
-<div class="colorlib-about" class="colorlib-light-grey">
+<div class="colorlib-about colorlib-light-grey">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
