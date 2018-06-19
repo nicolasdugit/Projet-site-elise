@@ -9,7 +9,7 @@
 	<?php include('view/frontend/templates/headerMain.php'); ?>
 <!-- AboutUs -->
 	<?php include('view/frontend/templates/aboutUs.php'); ?>
-	<!--  -->
+<!-- Nos Produits -->
 	<?php 
 		$titleSpe = 'Nos Produits' ;
 		$descriptionSpe	 = 'Retrouvez un large choix de produits de la mer';
@@ -26,8 +26,9 @@
 		$linkSpe3 = "nosPlateaux";
 
 		include('view/frontend/templates/specialities.php');
-
 	?>
+<!-- Video -->
+	<?php include('view/frontend/templates/video.php'); ?>
 
 <?php $content = ob_get_clean(); ?>
 
