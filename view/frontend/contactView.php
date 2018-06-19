@@ -57,14 +57,9 @@
 			</div>
 		</div>
 		<!-- mapbox -->
-		<div id='map' style='width: 400px; height: 300px;'></div>
-		<script>
-		mapboxgl.accessToken = 'pk.eyJ1Ijoibmljb2xhc2R1cXVlc25lIiwiYSI6ImNqaTMyejI3ejE2dnUzdmxrdXBpMW5tM3MifQ.qeLFoY_OigVRg_GY5mul7A';
-		var map = new mapboxgl.Map({
-		container: 'map',
-		style: 'mapbox://styles/mapbox/streets-v10'
-		});
-		</script>
+		<div class="row">
+			<div id='map' style='width: auto; height: 600px;'></div>
+		</div>
 
 <?php $content = ob_get_clean(); ?>
 
