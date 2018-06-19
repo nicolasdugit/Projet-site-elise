@@ -3,8 +3,10 @@
 require('controller/frontend.php');
 
 try {
-	if (isset($_GET['action'])) {
-
+	if (isset($_GET['page'])) {
+		if ($_GET['page'] == "contact") {
+			contactPage();
+		}
 	}
 	else {
 		showHomePage();
