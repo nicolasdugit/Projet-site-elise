@@ -94,47 +94,4 @@
   	</div>
 </aside>
 
-<div class="colorlib-intro">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3 col-sm-6 text-center">
-				<div class="intro animate-box">
-					<span class="icon">
-						<i class="icon-map4"></i>
-					</span>
-					<h2>Address</h2>
-					<p>198 West 21th Street, Suite 721 New York NY 10016</p>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 text-center">
-				<div class="intro animate-box">
-					<span class="icon">
-						<i class="icon-clock4"></i>
-					</span>
-					<h2>Opening Time</h2>
-					<p>Monday - Sunday</p>
-					<span>8am - 9pm</span>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 text-center">
-				<div class="intro animate-box">
-					<span class="icon">
-						<i class="icon-mobile2"></i>
-					</span>
-					<h2>Phone</h2>
-					<p>+ 001 234 567</p>
-					<p>+ 001 234 567</p>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 text-center">
-				<div class="intro animate-box">
-					<span class="icon">
-						<i class="icon-envelope"></i>
-					</span>
-					<h2>Email</h2>
-					<p><a href="#">info@domain.com</a><br><a href="#">luto@email.com</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<?php include('view/frontend/templates/contactBar.php'); ?>
