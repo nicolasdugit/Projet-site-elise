@@ -4,7 +4,7 @@
 			<div class="col-md-12">
 				<div class="colorlib-navbar-brand text-center">
 					<!-- <a class="colorlib-logo" href="index.html"><i class="flaticon-cutlery"></i><span>Lu</span><span>to</span></a> -->
-					<a class="colorlib-logo" style="padding-left: 0px;padding-right: 0px; background-color: #DAF1FF" href="index.php"><img style="height: 100px;" src="public/images/logo-chez-elise.png"></a>
+					<!-- <a class="colorlib-logo" style="padding-left: 0px;padding-right: 0px; background-color: #DAF1FF" href="index.php"><img style="height: 100px;" src="public/images/logo-chez-elise.png"></a> -->
 				</div>
 				<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 			</div>
