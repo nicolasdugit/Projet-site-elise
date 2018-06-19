@@ -3,38 +3,44 @@
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
 				<span class="icon"><i class="flaticon-cutlery"></i></span>
-				<h2>Our Delicious Specialties</h2>
-				<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+				<h2><?= $titleSpe ?></h2>
+				<p><?= $descriptionSpe ?></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4 animate-box">
 				<div class="dish-wrap">
 					<div class="wrap">
-						<div class="dish-img" style="background-image: url(public/images/dish-1.jpg);"></div>
-						<div class="desc">
-							<h2><a href="#">Luto Strawberry Dish</a></h2>
-						</div>
+						<a href="index.php?page=<?= $linkSpe1 ?>">
+							<div class="dish-img" style="background-image: url(<?= $imgSpe1 ?>);"></div>
+							<div class="desc">
+								<h2><?= $imgSpe1Desc ?></h2>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 animate-box">
 				<div class="dish-wrap">
 					<div class="wrap">
-						<div class="dish-img" style="background-image: url(public/images/dish-2.jpg);"></div>
-						<div class="desc">
-							<h2><a href="#">Pizza with strawberries</a></h2>
-						</div>
+						<a href="index.php?page=<?= $linkSpe2 ?>">
+							<div class="dish-img" style="background-image: url(<?= $imgSpe2 ?>);"></div>
+							<div class="desc">
+								<h2><?= $imgSpe2Desc ?></h2>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4 animate-box">
 				<div class="dish-wrap">
 					<div class="wrap">
-						<div class="dish-img" style="background-image: url(public/images/dish-3.jpg);"></div>
-						<div class="desc">
-							<h2><a href="#">Luto Grilled Beef</a></h2>
-						</div>
+						<a href="index.php?page=<?= $linkSpe3 ?>">
+							<div class="dish-img" style="background-image: url(<?= $imgSpe3 ?>);"></div>
+							<div class="desc">
+								<h2><?= $imgSpe3Desc ?></h2>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
