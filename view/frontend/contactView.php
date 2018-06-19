@@ -4,24 +4,27 @@
 
 
 <?php ob_start(); ?>
+
+<?php require('view/frontend/templates/headerSecondary.php'); ?>
+
 <div id="colorlib-contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-						<h2>Contact Us</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+						<h2>Nous Contacter</h2>
+						<p>La poissonnerie du port "Chez Elise" vous accueille toute l'année sur le port de Cassy. </p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0">
 						<div class="row">
 							<div class="col-md-4 animate-box">
-								<h3>My Address</h3>
+								<h3>Notre adresse</h3>
 								<ul class="contact-info">
-									<li><span><i class="icon-map5"></i></span>88 West 21th Street, Suite 721 New York NY 10016</li>
-									<li><span><i class="icon-phone4"></i></span>+ 1235 2355 98</li>
-									<li><span><i class="icon-envelope2"></i></span><a href="#">info@yoursite.com</a></li>
-									<li><span><i class="icon-globe3"></i></span><a href="#">www.yoursite.com</a></li>
+									<li><span><i class="icon-map5"></i></span>12 rue du Port de Cassy 33138 Lanton, Aquitaine, France</li>
+									<li><span><i class="icon-phone4"></i></span>05 57 70 70 49</li>
+									<li><span><i class="icon-envelope2"></i></span><a href="#">elise@poissonnerieduport.fr</a></li>
+									<li><span><i class="icon-globe3"></i></span><a href="#">www.poissonnerieduport.fr</a></li>
 								</ul>
 							</div>
 							<div class="col-md-7 col-md-push-1 animate-box">
@@ -33,7 +36,7 @@
 									</div>
 									<div class="col-md-6">
 										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
+											<input type="text" class="form-control" placeholder="Votre nom">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -43,7 +46,7 @@
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="submit" value="Send Message" class="btn btn-primary">
+											<input type="submit" value="Envoyer" class="btn btn-primary">
 										</div>
 									</div>
 								</div>
@@ -53,9 +56,16 @@
 				</div>
 			</div>
 		</div>
-		
-		<div id="map" class="colorlib-map"></div>
-		
+		<!-- mapbox -->
+		<div id='map' style='width: 400px; height: 300px;'></div>
+		<script>
+		mapboxgl.accessToken = 'pk.eyJ1Ijoibmljb2xhc2R1cXVlc25lIiwiYSI6ImNqaTMyejI3ejE2dnUzdmxrdXBpMW5tM3MifQ.qeLFoY_OigVRg_GY5mul7A';
+		var map = new mapboxgl.Map({
+		container: 'map',
+		style: 'mapbox://styles/mapbox/streets-v10'
+		});
+		</script>
+
 <?php $content = ob_get_clean(); ?>
 
 <?php require('view/frontend/templates/template.php'); ?>
