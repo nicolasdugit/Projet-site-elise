@@ -3,6 +3,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="colorlib-navbar-brand text-center">
+					<a class="colorlib-logo" href="index.php"><i class="flaticon-cutlery"></i><span>Eli</span><span>Se</span></a>
 				</div>
 				<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 			</div>
@@ -76,7 +77,7 @@
 		   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 			   					<h1>Bienvenue à la Poissonnerie Du Port <br> Chez Elise</h1>
 			   					<p>Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</p>
-			   					<p><a href="index.php?page=recettes" class="btn btn-primary btn-lg btn-learn">Nos Recettes</a></p>
+			   					<p><a href="index.php?page=nosRecette" class="btn btn-primary btn-lg btn-learn">Nos Recettes</a></p>
 			   					<div class="desc2"></div>
 			   				</div>
 		   				</div>

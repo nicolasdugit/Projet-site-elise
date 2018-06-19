@@ -16,12 +16,12 @@
 				<div class="col-md-12 text-center">
 					<ul>
 						<li class="active"><a href="index.php">Accueil</a></li>
-						<li><a href="index.php">Les Plats Cuisinés</a></li>
-						<li><a href="index.php">Sur le Banc</a></li>
-						<li><a href="index.php">Les Plateaux</a></li>
-						<li><a href="index.php">Notre Équipe</a></li>
-						<li><a href="index.php">Nos Recettes</a></li>
-						<li><a href="index.php">Nous Contacter</a></li>
+						<li><a href="index.php?page=platCuisine">Les Plats Cuisinés</a></li>
+						<li><a href="index.php?page=notreBanc">Sur le Banc</a></li>
+						<li><a href="index.php?page=nosPlateaux">Les Plateaux</a></li>
+						<li><a href="index.php?page=notreEquipe">Notre Équipe</a></li>
+						<li><a href="index.php?page=nosRecettes">Nos Recettes</a></li>
+						<li><a href="index.php?page=contact">Nous Contacter</a></li>
 					</ul>
 				</div>
 			</div>

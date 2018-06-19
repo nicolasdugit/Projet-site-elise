@@ -7,6 +7,21 @@ try {
 		if ($_GET['page'] == "contact") {
 			contactPage();
 		}
+		elseif ($_GET['page'] == "notreBanc") {
+			notreBancPage();
+		}
+		elseif ($_GET['page'] == "platCuisine") {
+			platCuisinePage();
+		}
+		elseif ($_GET['page'] == "nosPlateaux") {
+			nosPlateauxPage();
+		}
+		elseif ($_GET['page'] == "nosRecettes") {
+			nosRecettesPage();
+		}
+		elseif ($_GET['page'] == "notreEquipe") {
+			notreEquipePage();
+		}
 	}
 	else {
 		showHomePage();
