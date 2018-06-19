@@ -6,6 +6,7 @@
 <?php ob_start(); ?>
 
 <?php require('view/frontend/templates/headerSecondary.php'); ?>
+<?php include('view/frontend/templates/contactBar.php'); ?>
 
 <div id="colorlib-contact">
 			<div class="container">
