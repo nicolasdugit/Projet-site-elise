@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr-FR">
 	<head>
 		<?php include('view/frontend/templates/head.php'); ?>
 	</head>

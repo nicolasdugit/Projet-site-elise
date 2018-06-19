@@ -3,23 +3,23 @@
 
 	<title><?= $title ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="description" content="<?= $description ?>" />
+	<meta name="keywords" content="<?= $keywords ?>" />
+	<meta name="author" content="Nicolas Duquesne" />
 
   <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url"public/ content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url"public/ content="" />
+	<meta property="og:title" content="<?= $title ?>"/>
+	<meta property="og:image" content="public/images/logo-chez-elise.png"/>
+	<meta property="og:url" content="http://www.poissonnerieduport.fr"/>
+	<meta property="og:site_name" content="Poissonnerie du Port Chez Elise"/>
+	<meta property="og:description" content="<?= $description ?>"/>
+	<meta name="twitter:title" content="<?= $title ?>" />
+	<meta name="twitter:image" content="public/images/logo-chez-elise.png" />
+	<meta name="twitter:url" content="http://www.poissonnerieduport.fr" />
 	<meta name="twitter:card" content="" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="public/images/logo-chez-elise.png">
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
