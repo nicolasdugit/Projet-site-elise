@@ -4,7 +4,7 @@
 
 <?php ob_start(); ?>
 	<?php include('view/frontend/templates/headerMain.php'); ?>
-	
+	<?php include('view/frontend/templates/aboutUs.php'); ?>
 
 <?php $content = ob_get_clean(); ?>
 
