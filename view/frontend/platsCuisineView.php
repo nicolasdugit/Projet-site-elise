@@ -11,7 +11,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-			
+				<h4>Pas le temps de cuisiner ? Choisissez parmi nos plats cuisinés maison. Brandade de morue, paella, soupe de poisson... Tous les jours, un large choix !</h4>
 			</div>
 		</div>
 	</div>
