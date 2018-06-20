@@ -22,7 +22,7 @@
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="testimony">
 							<blockquote>
-								<p>"Poissons et crustacés de qualités. Conseils sur les préparations des produits et le personnelle est agréable et souriant!</p>
+								<p>"Poissons et crustacés de qualités. Conseils sur les préparations des produits et le personnel est agréable et souriant!</p>
 								<span>" &mdash; Emilie</span>
 							</blockquote>
 						</div>
