@@ -1,16 +1,6 @@
 <div class="colorlib-about" style="background-color: grey;">
 	<div class="container">
 		<div class="row">
-			<!-- <div class="col-md-3 col-pb-sm">
-				<h2>Lutong Bahay</h2>
-				<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind.</p>
-				<p class="colorlib-social-icons">
-					<a href="#"><i class="icon-facebook4"></i></a>
-					<a href="#"><i class="icon-twitter3"></i></a>
-					<a href="#"><i class="icon-googleplus"></i></a>
-					<a href="#"><i class="icon-instagram"></i></a>
-				</p>
-			</div> -->
 			<div class="col-md-4 col-pb-sm">
 				<h2>Dernières recettes</h2>
 				<div class="f-entry">
@@ -43,13 +33,7 @@
 			<div id="fb-root"></div>
 			<div class="col-md-4 col-pb-sm">
 				<h2><a href="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/"><i class="icon-facebook4"></i></a> Facebook</h2>
-			<script>(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.0';
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
+			
 				<div class="fb-page" 
   					data-href="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/"
   					data-heigth="600"
@@ -63,3 +47,4 @@
 		</div>
 	</div>
 </div>
+<script src="public/js/facebook.js"></script>
