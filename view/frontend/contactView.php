@@ -9,46 +9,44 @@
 <?php include('view/frontend/templates/contactBar.php'); ?>
 
 <div id="colorlib-contact">
-			<div class="container">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
+				<h4>La poissonnerie du port "Chez Elise" vous accueille toute l'année sur le port de Cassy. </h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-md-offset-0">
 				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-						<h4>La poissonnerie du port "Chez Elise" vous accueille toute l'année sur le port de Cassy. </h4>
+					<div class="col-md-4 animate-box">
+						<h3>Notre adresse</h3>
+						<ul class="contact-info">
+							<li><span><i class="icon-map5"></i></span>12 rue du Port de Cassy 33138 Lanton, Aquitaine, France</li>
+							<li><span><i class="icon-phone4"></i></span>05 57 70 70 49</li>
+							<li><span><i class="icon-envelope2"></i></span><a href="#">elise@poissonnerieduport.fr</a></li>
+							<li><span><i class="icon-globe3"></i></span><a href="index.php">www.poissonnerieduport.fr</a></li>
+						</ul>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0">
+					<div class="col-md-7 col-md-push-1 animate-box">
 						<div class="row">
-							<div class="col-md-4 animate-box">
-								<h3>Notre adresse</h3>
-								<ul class="contact-info">
-									<li><span><i class="icon-map5"></i></span>12 rue du Port de Cassy 33138 Lanton, Aquitaine, France</li>
-									<li><span><i class="icon-phone4"></i></span>05 57 70 70 49</li>
-									<li><span><i class="icon-envelope2"></i></span><a href="#">elise@poissonnerieduport.fr</a></li>
-									<li><span><i class="icon-globe3"></i></span><a href="#">www.poissonnerieduport.fr</a></li>
-								</ul>
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+								</div>
 							</div>
-							<div class="col-md-7 col-md-push-1 animate-box">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Votre nom">
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="submit" value="Envoyer" class="btn btn-primary">
-										</div>
-									</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Votre nom">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Email">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="submit" value="Envoyer" class="btn btn-primary">
 								</div>
 							</div>
 						</div>
@@ -58,8 +56,12 @@
 		</div>
 		<!-- mapbox -->
 		<div class="row">
-			<div id='map' style='width: auto; height: 600px;'></div>
+			<div class="col-md-12">
+				<div id='map'></div>
+			</div>
 		</div>
+	</div>
+</div>
 
 <?php $content = ob_get_clean(); ?>
 
