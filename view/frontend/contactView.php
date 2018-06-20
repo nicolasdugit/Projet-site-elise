@@ -1,7 +1,7 @@
 <?php $title = 'Bienvenue à la Poissonnerie du Port Chez Elise' ?>
 <?php $description = 'Bienvenue à la poissonnerie du port Chez Élise. Élise vous accueille dans sa poissonnerie située à Lanton sur le port de Cassy, au cœur du bassin d\'Arcachon' ?>
 <?php $keywords = 'Poissonnerie du Port Chez Elise' ?>
-
+<?php $pageTitle = 'Nous Contater' ?>
 
 <?php ob_start(); ?>
 
@@ -12,8 +12,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-						<h2>Nous Contacter</h2>
-						<p>La poissonnerie du port "Chez Elise" vous accueille toute l'année sur le port de Cassy. </p>
+						<h4>La poissonnerie du port "Chez Elise" vous accueille toute l'année sur le port de Cassy. </h4>
 					</div>
 				</div>
 				<div class="row">
