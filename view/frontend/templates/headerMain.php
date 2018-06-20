@@ -77,7 +77,7 @@
 		   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 			   					<h1>Bienvenue à la Poissonnerie Du Port <br> Chez Elise</h1>
 			   					<p>Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</p>
-			   					<p><a href="index.php?page=nosRecette" class="btn btn-primary btn-lg btn-learn">Nos Recettes</a></p>
+			   					<p><a href="index.php?page=nosRecettes" class="btn btn-primary btn-lg btn-learn">Nos Recettes</a></p>
 			   					<div class="desc2"></div>
 			   				</div>
 		   				</div>
