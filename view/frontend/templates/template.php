@@ -39,8 +39,7 @@
 	<!-- Date Picker -->
 	<script src="public/js/bootstrap-datepicker.js"></script>
 
-	<!-- Mapbox -->
-	<script src="public/js/mapbox.js"></script>
+
 
 	<!-- Main JS (Do not remove) -->
 	<script src="public/js/main.js"></script>

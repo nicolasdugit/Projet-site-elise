@@ -66,3 +66,6 @@
 <?php $content = ob_get_clean(); ?>
 
 <?php require('view/frontend/templates/template.php'); ?>
+
+<!-- Mapbox -->
+<script src="public/js/mapbox.js"></script>
