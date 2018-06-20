@@ -14,7 +14,7 @@
 		<div class="goto-here"></div>
 
 
-		
+		<?php include('view/frontend/templates/footer1.php'); ?>	
 		<?php include('view/frontend/templates/footer.php'); ?>
 	
 	</div>

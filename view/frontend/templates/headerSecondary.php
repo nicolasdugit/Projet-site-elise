@@ -23,7 +23,7 @@
 		   						<hr>
 		   						<br>
 			   					<h1><?= $pageTitle ?></h1>
-			   					<br>
+			   					<p><span><a href="index.php">Accueil</a></span> <span><?= $pageTitle ?></span></p>
 			   					<hr>
 			   					<div class="desc2"></div>
 		   					</div>
