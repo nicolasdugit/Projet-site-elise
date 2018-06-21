@@ -26,13 +26,17 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-pb-sm">
-				<h2><a href="https://www.instagram.com/chez_elise_33138/"><i class="icon-instagram"></i></a> Instagram </h2>
+				<h2><a href="https://www.instagram.com/chez_elise_33138/" target="_blank" ><i class="icon-instagram"></i></a> Instagram </h2>
 				
-				
+						
+
+
+
+
 			</div>
 			<div id="fb-root"></div>
 			<div class="col-md-4 col-pb-sm">
-				<h2><a href="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/"><i class="icon-facebook4"></i></a> Facebook</h2>
+				<h2><a href="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/" target="_blank" ><i class="icon-facebook4"></i></a> Facebook</h2>
 			
 				<div class="fb-page" 
   					data-href="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/"
