@@ -11,7 +11,197 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<h4>Choisissez parmi nos formules proposées ou composez vous même votre plateau de fruits de mer. Nous proposons aussi des plateaux d’huîtres.</h4>
+				<h2>Nos Plateaux de fruits de mer</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="row">
+					<div class="about-desc">
+						<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+							<h2>FORMULE 20 EUROS</h2>
+						</div>
+						<div class="col-md-12 animate-box">
+							<span>
+								<ul>
+									<li>6 Huîtres n°4</li>
+									<li>1/2 Tourteau</li>
+									<li>2 Langoustines</li>
+									<li>5 Crevettes de Madagascar</li>
+									<li>6 Bulots</li>
+									<li>Crevettes Grises</li>
+									<li>Bigorneaux</li>
+									<li>Citron, mayonnaise</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="about-img about-img-2" style="background-image: url(public/images/formule20-double.jpg);">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="about-img about-img-2" style="background-image: url(public/images/formule24-double.jpg);">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="row">
+					<div class="about-desc">
+						<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+							<h2>FORMULE 24 EUROS</h2>
+						</div>
+						<div class="col-md-12 animate-box">
+							<span>
+								<ul>
+									<li>6 Huîtres n°4</li>
+									<li>1/2 Tourteau</li>
+									<li>2 Langoustines</li>
+									<li>5 Crevettes de Madagascar</li>
+									<li>6 Bulots</li>
+									<li>3 Palourdes</li>
+									<li>3 Amandes</li>
+									<li>3 Moules</li>
+									<li>Crevettes Grises</li>
+									<li>Bigorneaux</li>
+									<li>Citron, mayonnaise</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="row">
+					<div class="about-desc">
+						<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+							<h2>FORMULE 30 EUROS</h2>
+						</div>
+						<div class="col-md-12 animate-box">
+							<span>
+								<ul>
+									<li>6 Huîtres n°4</li>
+									<li>1/2 Homard</li>
+									<li>2 Langoustines</li>
+									<li>5 Crevettes de Madagascar</li>
+									<li>6 Bulots</li>
+									<li>3 Amandes</li>
+									<li>Crevettes Grises</li>
+									<li>Bigorneaux</li>
+									<li>Citron, mayonnaise</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="about-img about-img-2" style="background-image: url(public/images/formule20-triple.jpg);">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="about-img about-img-2" style="background-image: url(public/images/Acomposer.jpg);">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="row">
+					<div class="about-desc">
+						<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+							<h2>PLATEAU "TOUT CUITS"</h2>
+						</div>
+						<div class="col-md-12 animate-box">
+							<span>
+								<ul>
+									<li>6 Crevettes Equateur</li>
+									<li>2 Pinces de crabe </li>
+									<li>2 Langoustines</li>
+									<li>6 Bulots</li>
+									<li>Crevettes Grises</li>
+									<li>Bigorneaux</li>
+									<li>Citron, mayonnaise</li>
+								</ul>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-7">
+				<div class="row">
+					<div class="about-desc">
+						<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+							<h2>PLATEAUX D'HUITRES</h2>
+						</div>
+						<div class="col-md-12 animate-box">
+							<span>Pour vos réceptions (mariage, baptême, anniversaire, repas, ...), commander votre buffet d’huîtres !!! <br>
+							Plateaux d’huîtres ouvertes sur un lit de glace et d’algue avec citron. </span>
+							<span>Livraison possible à domicile (d’Audenge à Claouey). <br>
+							Prix selon quantités et tailles d'huîtres.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="about-img about-img-2" style="background-image: url(public/images/plateau-huitres2.jpg);">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="about-img about-img-2" style="background-image: url(public/images/plateaufruitdemer.jpg);">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="row">
+					<div class="about-desc">
+						<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+							<h2>COMPOSEZ VOUS MEME</h2>
+						</div>
+						<div class="col-md-12 animate-box">
+							<span>Les Formules sont modifiables selon vos goûts.<br>
+							N’hésitez pas à composer vous même votre plateau de fruits de mer !!</span>
+							<span> N'oubliez pas de passer commande 24h à l'avance.<br>
+							Les plateaux sont consignés (2 euros).</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

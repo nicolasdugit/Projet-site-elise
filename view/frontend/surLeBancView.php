@@ -99,7 +99,7 @@
 							<h2>LE VIVIER</h2>
 						</div>
 						<div class="col-md-12 animate-box">
-							<p>Langoustes, tourteaux, homards vivants...</p>
+							<span>Langoustes, tourteaux, homards vivants...</span>
 						</div>
 					</div>
 				</div>
