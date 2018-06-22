@@ -22,7 +22,7 @@
 		   					<div class="desc">
 		   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 			   					<h1>Bienvenue à la Poissonnerie Du Port <br> Chez Elise</h1>
-			   					<p>Toute l'année Elise et son équipe vous accueille sur le port de cassy</p>
+			   					<h3 style="color: white;">Toute l'année Elise et son équipe vous accueille sur le port de cassy</h3>
 			   					<p><a href="index.php?page=contact" class="btn btn-primary btn-lg btn-learn">Où nous trouver ?</a></p>
 			   					<div class="desc2"></div>
 		   					</div>
@@ -40,7 +40,7 @@
 		   					<div class="desc">
 		   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 			   					<h1>Bienvenue à la Poissonnerie Du Port <br> Chez Elise</h1>
-			   					<p>Nos plats cuisinés sont réalisés dans notre cuisines avec des produits frais, de qualité et de saison</p>
+			   					<h3 style="color: white;">Nos plats cuisinés sont réalisés dans notre cuisines avec des produits frais, de qualité et de saison</h3>
 			   					<p><a href="index.php?page=platCuisine" class="btn btn-primary btn-lg btn-learn">Nos plats cuisinés</a></p>
 			   					<div class="desc2"></div>
 			   				</div>
@@ -58,7 +58,7 @@
 		   					<div class="desc">
 		   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 			   					<h1>Bienvenue à la Poissonnerie Du Port <br> Chez Elise</h1>
-			   					<p>Venez découvrir un large choix de poissons, coquillages et crustacés mais aussi des plats cuisinés et des produits régionaux</p>
+			   					<h3 style="color: white;">Venez découvrir un large choix de poissons, coquillages et crustacés mais aussi des plats cuisinés et des produits régionaux</h3>
 			   					<p><a href="index.php?page=notreBanc" class="btn btn-primary btn-lg btn-learn">Voir notre Banc</a></p>
 			   					<div class="desc2"></div>
 			   				</div>
@@ -76,7 +76,7 @@
 		   					<div class="desc">
 		   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 			   					<h1>Bienvenue à la Poissonnerie Du Port <br> Chez Elise</h1>
-			   					<p>Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</p>
+			   					<h3 style="color: white;">Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</h3>
 			   					<p><a href="index.php?page=nosRecettes" class="btn btn-primary btn-lg btn-learn">Nos Recettes</a></p>
 			   					<div class="desc2"></div>
 			   				</div>
