@@ -11,8 +11,8 @@
 <div id="colorlib-contact">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-				<h4>La poissonnerie du port "Chez Elise" vous accueille toute l'année sur le port de Cassy. </h4>
+			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+				<h2>La poissonnerie du port "Chez Elise" vous accueille toute l'année sur le port de Cassy. </h2>
 			</div>
 		</div>
 		<div class="row">
