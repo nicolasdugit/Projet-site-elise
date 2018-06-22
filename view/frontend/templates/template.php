@@ -40,7 +40,6 @@
 	<script src="public/js/bootstrap-datepicker.js"></script>
 
 
-
 	<!-- Main JS (Do not remove) -->
 	<script src="public/js/main.js"></script>
 

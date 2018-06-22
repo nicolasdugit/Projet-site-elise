@@ -26,10 +26,8 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-pb-sm">
-				<h2><a href="https://www.instagram.com/chez_elise_33138/" target="_blank" ><i class="icon-instagram"></i></a> Instagram </h2>
 				
-						
-
+     
 
 
 
