@@ -30,25 +30,6 @@
 <!-- Video -->
 	<!-- <?php include('view/frontend/templates/video.php'); ?> -->
 
-<!-- section -->
-	<!-- <?php 
-		$titleSpe = 'Nos Produits' ;
-		$descriptionSpe	 = 'Retrouvez un large choix de produits de la mer';
-		$imgSpe1 = 'public/images/banc.jpg' ;
-		$imgSpe1Desc = 'Sur le Banc';
-		$linkSpe1 = "notreBanc";
-	
-		$imgSpe2 = 'public/images/plats-cuisinés.jpg' ;
-		$imgSpe2Desc = 'Plats Cuisinés';
-		$linkSpe2 = "platCuisine";
-	
-		$imgSpe3 = 'public/images/nos-plateaux.jpg' ;
-		$imgSpe3Desc = 'Les Plateaux';
-		$linkSpe3 = "nosPlateaux";
-	
-		include('view/frontend/templates/specialities.php');
-	?> -->
-
 <!-- testimonies -->
 	<?php include('view/frontend/templates/testimonies.php'); ?>
 

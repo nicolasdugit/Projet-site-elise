@@ -1,4 +1,4 @@
-<div class="colorlib-menu">
+<div class="colorlib-menu" style="padding-top: 0;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
