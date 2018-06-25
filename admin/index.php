@@ -3,9 +3,9 @@ session_start();
 require('controller/backend.php');
 
 try {
-	if (isset($_GET['action'])) {
-		if ($_GET['action'] == '') {
-			# code...
+	if (isset($_GET['action']) OR isset($_GET['page'])) {
+		if ($_GET['page'] == 'mail') {
+			adminMail();
 		}
 		elseif ($_GET['action'] == '') {
 			# code...
