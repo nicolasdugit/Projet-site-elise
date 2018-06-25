@@ -5,4 +5,4 @@
 
 <?php $content = ob_get_clean(); ?>
 
-<?php require('view/templates/template.php'); ?>
+<?php require('view/templates/templateAdmin.php'); ?>
