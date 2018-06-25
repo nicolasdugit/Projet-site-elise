@@ -4,8 +4,8 @@ require('controller/backend.php');
 
 try {
 	if (isset($_GET['action']) OR isset($_GET['page'])) {
-		if ($_GET['page'] == 'mail') {
-			adminMail();
+		if ($_GET['page'] == 'inbox') {
+			adminInbox();
 		}
 		elseif ($_GET['action'] == '') {
 			# code...
