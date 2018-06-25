@@ -31,7 +31,70 @@
 									<li><a href="#">Settings 2</a></li>
 								</ul>
 							</li>
+							<li><a class="close-link"><i class="fa fa-close"></i></a></li>
 						</ul>
+						<div class="clearfix"></div>
+					</div>
+					<div class="x_content">
+						<!-- MAIL LIST -->
+						<div class="row">
+							<div class="col-sm-3 mail_list_column">
+								<button id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</button>
+								<a href="#">
+									<div class="mail_list">
+										<div class="left">
+											<i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+										</div>
+										<div class="right">
+										<h3>Dennis Mugo <small>3.00 PM</small></h3>
+											<p>Ut enim ad minim veniam, quis nostrud exercitation enim ad minim veniam, quis nostrud exercitation...</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<!-- /MAIL LIST -->
+							<!-- MAIL CONTENT -->
+							<div class="col-sm-9 mail_view">
+								<div class="inbox-body">
+									<div class="mail_heading row">
+										<div class="col-md-8">
+											<div class="btn-group">
+												<button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Reply</button>
+												<button class="btn btn-sm btn-default" type="button"  data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
+												<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
+												<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash"><i class="fa fa-trash-o"></i></button>
+											</div>
+										</div>
+										<div class="col-md-4 text-right">
+											<p class="date"> 8:02 PM 12 FEB 2014</p>
+										</div>
+										<div class="col-md-12">
+											<h4> Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum.</h4>
+										</div>
+									</div>
+									<div class="sender-info">
+										<div class="row">
+											<div class="col-md-12">
+												<strong>Jon Doe</strong>
+												<span>(jon.doe@gmail.com)</span> to
+												<strong>me</strong>
+												<a class="sender-dropdown"><i class="fa fa-chevron-down"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="view-mail">
+										<p>Contenu du mail</p>
+									</div>
+									<div class="btn-group">
+										<button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Reply</button> 
+										<button class="btn btn-sm btn-default" type="button"  data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
+										<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
+										<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash"><i class="fa fa-trash-o"></i></button>
+									</div>
+								</div>
+							</div>
+							<!-- /MAIL CONTENT -->
+						</div>
 					</div>
 				</div>
 			</div>
