@@ -8,10 +8,9 @@ class UserManager extends Manager
 	public function getUser($name) 
 	{
 		$db = $this->dbConnect();
-		 $req = $db->prepare('SELECT * FROM boot-users WHERE name = ?');
-        $req->execute(array($name));
-        $affectedLines = $req->fetch();
-        
-        return $affectedLines;
+		$req = $db->prepare('SELECT * FROM boot-users WHERE name = ?');
+		$req->execute(array($name));
+		$affectedLines = $req->fetch();
+		return $affectedLines;
 	}
 }
