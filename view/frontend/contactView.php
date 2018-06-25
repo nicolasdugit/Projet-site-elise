@@ -29,26 +29,28 @@
 					</div>
 					<div class="col-md-7 col-md-push-1 animate-box">
 						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+							<form action="index.php?action=sentMail" method="post">
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+									</div>
 								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Votre nom">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Votre nom">
+									</div>
 								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Email">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Email">
+									</div>
 								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<input type="submit" value="Envoyer" class="btn btn-primary">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="submit" value="Envoyer" class="btn btn-primary">
+									</div>
 								</div>
-							</div>
+							</form>
 						</div>
 					</div>
 				</div>
