@@ -18,3 +18,21 @@ function adminInbox()
 	
 	require('view/inboxView.php');
 }
+
+function mailShow()
+{
+	$mailManager = new MailManager();
+
+	$mail = $mailManager->getMail($_GET['id']);
+	
+	require('view/inboxView.php');
+
+	if (!empty($mail)) 
+    {
+        require('view/frontend/inboxView.php');
+    }
+    else
+    {
+        throw new Exception('Aucun message trouvé sur cette page');
+    }
+}
