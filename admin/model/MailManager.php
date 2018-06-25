@@ -18,7 +18,7 @@ class MailManager extends Manager
 		$db = $this->dbConnect();
 		$req = $db->prepare('SELECT id, mail_name, mail_mail, mail_content, mail_date, mail_subject FROM boot_mail WHERE id = ?');
 		$req->execute(array($mailId));
-		$mail-> $req->fetch();
+		$mail = $req->fetch();
 
 		return $mail;
 	}
