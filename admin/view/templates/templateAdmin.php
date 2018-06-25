@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="view/images/favicon.ico" type="image/ico" />
-   		<title>$title</title>
+   		<title><?= $title ?></title>
 		<!-- Bootstrap -->
 		<link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 		<!-- Font Awesome -->
@@ -32,6 +32,7 @@
 					require('view/templates/leftSideBar.php');
 					require('view/templates/topBar.php');
 				?>
+				<?= $content ?>
 			</div>
 		</div>
 

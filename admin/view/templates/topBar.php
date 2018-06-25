@@ -31,7 +31,7 @@
 					</a>
 					<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
 						<li>
-							<a>
+							<a href="index.php?page=inbox">
 								<span class="image"><img src="view/images/img.jpg" alt="Profile Image" /></span>
 								<span>
 									<span>John Smith</span>

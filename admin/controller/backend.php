@@ -7,5 +7,5 @@ function adminHome()
 
 function adminInbox()
 {
-	require('view/adminInbox.php');
+	require('view/inboxView.php');
 }
