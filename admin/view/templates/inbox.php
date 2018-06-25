@@ -40,17 +40,26 @@
 						<div class="row">
 							<div class="col-sm-3 mail_list_column">
 								<button id="compose" class="btn btn-sm btn-success btn-block" type="button">COMPOSE</button>
-								<a href="#">
-									<div class="mail_list">
-										<div class="left">
-											<i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+								<?php
+								while ($mail = $mails->fetch())
+								{
+									?>
+									<a href="#">
+										<div class="mail_list">
+											<div class="left">
+												<i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+											</div>
+											<div class="right">
+											<h3><?=$mail['mail-name'] ?> <small><?=$mail['mail-date'] ?></small></h3>
+												<p><?=$mail['mail-content'] ?></p>
+											</div>
 										</div>
-										<div class="right">
-										<h3>Dennis Mugo <small>3.00 PM</small></h3>
-											<p>Ut enim ad minim veniam, quis nostrud exercitation enim ad minim veniam, quis nostrud exercitation...</p>
-										</div>
-									</div>
-								</a>
+									</a>
+									<?php
+								}
+								?>
+
+
 							</div>
 							<!-- /MAIL LIST -->
 							<!-- MAIL CONTENT -->
