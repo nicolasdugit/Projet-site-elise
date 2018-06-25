@@ -33,6 +33,7 @@
 					require('view/templates/topBar.php');
 				?>
 				<?= $content ?>
+				<?php require('view/templates/footer.php') ?>
 			</div>
 		</div>
 
