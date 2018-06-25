@@ -30,19 +30,24 @@
 					<div class="col-md-7 col-md-push-1 animate-box">
 						<div class="row">
 							<form action="index.php?action=sentMail" method="post">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input name="subject" type="text" class="form-control" placeholder="Sujet">
+									</div>
+								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-										<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+										<textarea name="content" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Votre nom">
+										<input name="name" type="text" class="form-control" placeholder="Votre nom">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Email">
+										<input name="mail" type="text" class="form-control" placeholder="Email">
 									</div>
 								</div>
 								<div class="col-md-12">

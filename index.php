@@ -23,6 +23,12 @@ try {
 			notreEquipePage();
 		}
 	}
+	elseif (isset($_GET['action'])) {
+		 if ($_GET['action'] == 'sentMail') {
+		 	sentMail($_POST['subject'], $_POST['name'],$_POST['mail'], $_POST['content']);
+		 }
+		
+	}
 	else {
 		showHomePage();
 	}
