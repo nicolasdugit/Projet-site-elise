@@ -1,6 +1,10 @@
 <?php $title = 'PAGE ADMIN -Mail- Poissonnerie du Port Chez Elise'; ?>
 
 <?php ob_start(); ?>
+	<?php
+	require('view/templates/leftSideBar.php');
+	require('view/templates/topBar.php');
+	?>
 <div class="right_col" role="main">
 	<div class="">
 		<div class="page-title">
