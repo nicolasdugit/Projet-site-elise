@@ -33,6 +33,10 @@ try {
 					throw new Exception('Aucun mail à supprimer');
 				}
 			}
+			else
+			{
+				throw new Exception('page Non Trouvée');
+			}
 		}
 		else 
 		{
