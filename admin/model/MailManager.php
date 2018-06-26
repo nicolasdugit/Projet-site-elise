@@ -22,5 +22,16 @@ class MailManager extends Manager
 
 		return $mail;
 	}
+
+	public function eraseMail($mailId)
+	{
+		$db = $this->dbConnect();
+		$req = $db->prepare('DELETE FROM boot_mail WHERE id = :mailId');
+		$affectedLines = $req->execute(array(
+			':mailId' => $mailId,
+		));
+
+		return $affectedLines;
+	}
 }
 
