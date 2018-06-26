@@ -3,8 +3,10 @@ session_start();
 require('controller/backend.php');
 
 try {
-	if (isset($_SESSION['user_status']) AND $_SESSION['user_status'] == 1) {
-		if (isset($_GET['action']) OR isset($_GET['page'])) {
+	if (isset($_SESSION['user_status']) AND $_SESSION['user_status'] == 1) 
+	{
+		if (isset($_GET['action']) OR isset($_GET['page'])) 
+		{
 			if ($_GET['page'] == 'inbox') 
 			{
 				if (isset($_GET['id']) && $_GET['id'] > 0)
@@ -13,19 +15,33 @@ try {
 				}
 				else {
 					adminInbox();
-
 				}
 			}
-			elseif ($_GET['action'] == 'deconnection') {
+			elseif ($_GET['action'] == 'deconnection') 
+			{
 				deconnection();
 			}
+			elseif ($_GET['action'] == 'eraseMail') 
+			{
+				if (isset($_GET['id']) && $_GET['id'] > 0) 
+				{
+					eraseMail($_GET['id']);
+				}
+				else
+				{
+					throw new Exception('Aucun mail à supprimer');
+				}
+			}
 		}
-		else {
+		else 
+		{
 			adminHome();
 		}
 	}
-	else {
-		if (isset($_GET['action'])) {
+	else 
+	{
+		if (isset($_GET['action'])) 
+		{
 			if ($_GET['action'] == 'connection') 
 			{
 				if ($_POST['pseudo'] && $_POST['pass']) 

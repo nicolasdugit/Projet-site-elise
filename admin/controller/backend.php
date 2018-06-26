@@ -74,8 +74,10 @@ function adminInbox()
 function mailShow($mailId)
 {
 	$mailManager = new MailManager();
+
 	$mails = $mailManager->getMails();
 	$mails = $mails->fetchAll();
+
 	$mailOne = $mailManager->getMail($mailId);
 
 	if (!empty($mailOne)) 
@@ -85,6 +87,22 @@ function mailShow($mailId)
 	else
 	{
 		throw new Exception('Aucun message trouvé sur cette page');
+	}
+}
+
+function eraseMail($mailId)
+{
+	$mailManager = new MailManager();
+
+	$affectedLines = $postManager->deletePost($mailId);
+
+	if ($affectedLines == false) 
+	{
+	    throw new Exception('Impossible de supprimer le mail !');       
+	}
+	else
+	{
+	    header('Location: index.php?page=inbox');
 	}
 
 }
