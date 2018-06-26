@@ -1,4 +1,7 @@
 <?php
+use Poissonneriedupost\Elise\Frontend\model\MailManager;
+
+require_once('model/MailManager.php');
 
 function showHomePage()
 {
@@ -29,4 +32,19 @@ function nosRecettesPage()
 function notreEquipePage()
 {
 	require('view/frontend/equipeView.php');
+}
+
+function sentMail($subject, $name, $mail, $content)
+{
+	$mailManager = new MailManager();
+
+	$affectedLines = $mailManager->sendMail($subject, $name, $mail, $content);
+	if ($affectedLines === false) 
+	{
+		throw new Exception('Impossible d\'ajouter le commentaire !');
+	}
+	else 
+	{
+		header('Location: index.php?page=contact');
+	}
 }
