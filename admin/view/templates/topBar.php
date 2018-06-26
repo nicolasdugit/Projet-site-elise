@@ -26,10 +26,10 @@
 				<li role="presentation" class="dropdown">
 					<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
 						<i class="fa fa-envelope-o"></i>
-						<span class="badge bg-green"><?= count($mails) ?></span>
+						<span class="badge bg-green"><?= count($mailsNonLu) ?></span>
 					</a>
 					<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-						<?php foreach (array_slice($mails, 0, 3) as $mail) : ?>
+						<?php foreach (array_slice($mailsNonLu, 0, 5) as $mail) : ?>
 							<li>
 								<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">
 									<span class="image"><img src="view/images/img.jpg" alt="Profile Image" /></span>

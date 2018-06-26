@@ -12,6 +12,9 @@ function adminHome()
 	$mails = $mailManager->getMails();
 	$mails = $mails->fetchAll();
 
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
+
 	require('view/adminView.php');
 	
 }
@@ -68,6 +71,9 @@ function adminInbox()
 	$mails = $mailManager->getMails();
 	$mails = $mails->fetchAll();
 
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
+
 	require('view/inboxView.php');
 }
 
@@ -77,6 +83,9 @@ function mailShow($mailId)
 
 	$mails = $mailManager->getMails();
 	$mails = $mails->fetchAll();
+
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
 
 	$mailOne = $mailManager->getMail($mailId);
 
