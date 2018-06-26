@@ -34,11 +34,11 @@
 								<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">
 									<span class="image"><img src="view/images/img.jpg" alt="Profile Image" /></span>
 									<span>
-										<span><?=$mail['mail_name'] ?></span>
+										<span><?= htmlspecialchars($mail['mail_name']) ?></span>
 										<span class="time"><?=$mail['mail_date'] ?></span>
 									</span>
 									<span class="message">
-										<?= htmlspecialchars($mail['mail_subject']) ?>
+										<?= strtoupper(htmlspecialchars($mail['mail_subject'])) ?>
 									</span>
 								</a>
 							</li>

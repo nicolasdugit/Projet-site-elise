@@ -17,8 +17,8 @@
 							<p class="day"><?=$mail['mail_date'][8],$mail['mail_date'][9]?></p>
 						</a>
 						<div class="media-body">
-							<a class="title" href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>"><?=$mail['mail_name'] ?> </a>
-							<p><?= htmlspecialchars($mail['mail_subject']) ?></p>
+							<a class="title" href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>"><?= htmlspecialchars($mail['mail_name']) ?> </a>
+							<p><?= strtoupper(htmlspecialchars($mail['mail_subject'])) ?></p>
 						</div>
 					</article>
 				<?php endforeach ; ?>
