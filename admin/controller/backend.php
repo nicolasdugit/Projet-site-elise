@@ -11,7 +11,6 @@ function adminHome()
 
 	$mails = $mailManager->getMails();
 	$mails = $mails->fetchAll();
-	// $mailsTop = $mailManager->getMails();
 
 	require('view/adminView.php');
 	
@@ -65,17 +64,18 @@ function deconnection()
 function adminInbox()
 {
 	$mailManager = new MailManager();
-	$mailsTop = $mailManager->getMails();
-	$mailInbox = $mailManager->getMails();
-	
+
+	$mails = $mailManager->getMails();
+	$mails = $mails->fetchAll();
+
 	require('view/inboxView.php');
 }
 
 function mailShow($mailId)
 {
 	$mailManager = new MailManager();
-	$mailInbox = $mailManager->getMails();
-	$mailsTop = $mailManager->getMails();
+	$mails = $mailManager->getMails();
+	$mails = $mails->fetchAll();
 	$mailOne = $mailManager->getMail($mailId);
 
 	if (!empty($mailOne)) 

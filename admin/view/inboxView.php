@@ -42,14 +42,15 @@
 						<div class="row">
 							<div class="col-sm-3 mail_list_column">
 								<button id="compose" class="btn btn-sm btn-success btn-block" type="button">NOUVEAU</button>
-								<?php
-								while ($mail = $mailInbox->fetch())
-								{
-									?>
+								<?php foreach ($mails as $mail) : ?>
 									<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">
 										<div class="mail_list">
 											<div class="left">
-												<i class="fa fa-circle"></i> <i class="fa fa-edit"></i>
+												<?php if ($mail['mail_status'] == 1) : ?>
+													<i class="fa fa-circle-thin"></i>
+													<?php else : ?>
+													<i class="fa fa-circle"></i>
+												<?php endif ; ?>
 											</div>
 											<div class="right">
 											<h3><?=$mail['mail_name'] ?> <small><?=$mail['mail_date'] ?></small></h3>
@@ -57,16 +58,11 @@
 											</div>
 										</div>
 									</a>
-									<?php
-								}
-								$mailInbox->closeCursor();
-								?>
+								<?php endforeach ; ?>
 							</div>
 							<!-- /MAIL LIST -->
 							<!-- MAIL CONTENT -->
-							<?php if (isset($_GET['id']))
-							{
-							?>
+							<?php if (isset($_GET['id'])) : ?>
 							<div class="col-sm-9 mail_view">
 								<div class="inbox-body">
 									<div class="mail_heading row">
@@ -107,9 +103,7 @@
 									</div>
 								</div>
 							</div>
-							<?php
-							}
-							?>
+							<?php endif ; ?>
 							<!-- /MAIL CONTENT -->
 						</div>
 					</div>
