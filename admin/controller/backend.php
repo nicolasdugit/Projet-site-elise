@@ -38,6 +38,7 @@ function connectionAdmin($pseudo, $pass)
 		{
 			session_start();
 			$_SESSION['user_status'] = $passTest['user_status'];
+			$_SESSION['user_name'] = $pseudo;
 			header('Location: index.php');
 		}
 		else
