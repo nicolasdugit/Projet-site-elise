@@ -12,6 +12,7 @@ try {
 				if (isset($_GET['id']) && $_GET['id'] > 0)
 				{
 					mailShow($_GET['id']);
+					markMail($_GET['id']);
 				}
 				else {
 					adminInbox();
@@ -20,17 +21,6 @@ try {
 			elseif ($_GET['action'] == 'deconnection') 
 			{
 				deconnection();
-			}
-			elseif ($_GET['action'] == 'markMail') 
-			{
-				if (isset($_GET['mailId']) && $_GET['mailId'] > 0) 
-				{
-					markMail($_GET['mailId']);
-				}
-				else
-				{
-					throw new Exception('Aucun mail à supprimer');
-				}
 			}
 			elseif ($_GET['action'] == 'eraseMail') 
 			{
