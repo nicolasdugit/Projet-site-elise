@@ -90,6 +90,22 @@ function mailShow($mailId)
 	}
 }
 
+function markMail($mailId)
+{
+	$mailManager = new MailManager();
+
+	$affectedLines = $mailManager->markMail($mailId);
+
+	if ($affectedLines == false) 
+	{
+	    throw new Exception('Impossible de lire le mail !');
+	}
+	else
+	{
+	    header('Location: index.php?page=inbox&id=' . $mailId);
+	}
+}
+
 function eraseMail($mailId)
 {
 	$mailManager = new MailManager();
