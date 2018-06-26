@@ -89,6 +89,8 @@ function mailShow($mailId)
 
 	$mailOne = $mailManager->getMail($mailId);
 
+	$markMail = $mailManager->markMail($mailId);
+
 	if (!empty($mailOne)) 
 	{
 		require('view/inboxView.php');
@@ -96,22 +98,6 @@ function mailShow($mailId)
 	else
 	{
 		throw new Exception('Aucun message trouvé sur cette page');
-	}
-}
-
-function markMail($mailId)
-{
-	$mailManager = new MailManager();
-
-	$affectedLines = $mailManager->markMail($mailId);
-
-	if ($affectedLines == false) 
-	{
-	    throw new Exception('Impossible de lire le mail !');
-	}
-	else
-	{
-	    header('Location: index.php?page=inbox&id=' . $mailId);
 	}
 }
 

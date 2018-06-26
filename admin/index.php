@@ -12,7 +12,6 @@ try {
 				if (isset($_GET['id']) && $_GET['id'] > 0)
 				{
 					mailShow($_GET['id']);
-					markMail($_GET['id']);
 				}
 				else {
 					adminInbox();
