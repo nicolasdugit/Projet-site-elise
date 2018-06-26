@@ -99,12 +99,6 @@
 									<div class="view-mail">
 										<p><?= htmlspecialchars($mailOne['mail_content']) ?></p>
 									</div>
-									<div class="btn-group">
-										<button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Répondre</button> 
-										<button class="btn btn-sm btn-default" type="button"  data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
-										<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
-										<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash"><i class="fa fa-trash-o"></i></button>
-									</div>
 								</div>
 							</div>
 							<?php endif ; ?>
