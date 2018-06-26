@@ -13,7 +13,7 @@
 				<span>Bienvenue,</span>
 				<h2>
 					<?php if (isset($_SESSION['user_name'])) : ?>
-						<?= htmlspecialchars($_SESSION['user_name']) ?>
+						<?= strtoupper(htmlspecialchars($_SESSION['user_name'])) ?>
 					<?php else : ?>
 						<?php throw new Exception('Probleme identification'); ?>
 					<?php endif ; ?>
