@@ -37,8 +37,10 @@
 					</a>
 					<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
 						<?php
-						while ($mail = $mailsTop->fetch())
+						$i=0;
+						while ($mail = $mailsTop->fetch() AND $i<5)
 						{
+							$i++;
 							?>
 								<li>
 									<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">

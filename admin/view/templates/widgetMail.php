@@ -30,8 +30,10 @@
 					</div>
 					<div class="x_content">
 						<?php
-						while ($mail = $mails->fetch())
+						$i=0;
+						while ($mail = $mails->fetch() AND $i<5)
 						{
+							$i++;
 							?>
 							<article class="media event">
 								<a class="pull-left date">
