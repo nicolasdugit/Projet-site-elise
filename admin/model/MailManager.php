@@ -23,6 +23,17 @@ class MailManager extends Manager
 		return $mail;
 	}
 
+	public function markMail($mailId)
+	{
+		$db = $this->dbConnect();
+		$req = $db->prepare('UPDATE boot_mail SET mail_status=1 WHERE id = :mailId');
+		$affectedLines = $req->execute(array(
+			':mailId' => $mailId,
+		));
+
+		return $affectedLines;
+	}
+
 	public function eraseMail($mailId)
 	{
 		$db = $this->dbConnect();
