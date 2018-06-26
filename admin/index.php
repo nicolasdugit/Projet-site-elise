@@ -21,6 +21,17 @@ try {
 			{
 				deconnection();
 			}
+			elseif ($_GET['action'] == 'markMail') 
+			{
+				if (isset($_GET['mailId']) && $_GET['mailId'] > 0) 
+				{
+					markMail($_GET['mailId']);
+				}
+				else
+				{
+					throw new Exception('Aucun mail à supprimer');
+				}
+			}
 			elseif ($_GET['action'] == 'eraseMail') 
 			{
 				if (isset($_GET['mailId']) && $_GET['mailId'] > 0) 
