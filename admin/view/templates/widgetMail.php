@@ -29,16 +29,24 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="x_content">
-						<article class="media event">
-							<a class="pull-left date">
-								<p class="month">April</p>
-								<p class="day">23</p>
-							</a>
-							<div class="media-body">
-								<a class="title" href="#">Item One Title</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</article>
+						<?php
+						while ($mail = $mails->fetch())
+						{
+							?>
+							<article class="media event">
+								<a class="pull-left date">
+									<p class="month"><?=$mail['mail_date'] ?></p>
+									<p class="day">23</p>
+								</a>
+								<div class="media-body">
+									<a class="title" href="#"><?=$mail['mail_name'] ?> </a>
+									<p><?= htmlspecialchars($mail['mail_subject']) ?></p>
+								</div>
+							</article>
+							<?php
+						}
+						$mails->closeCursor();
+						?>
 					</div>
 				</div>
 			</div>

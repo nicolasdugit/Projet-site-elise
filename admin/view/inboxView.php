@@ -43,7 +43,7 @@
 							<div class="col-sm-3 mail_list_column">
 								<button id="compose" class="btn btn-sm btn-success btn-block" type="button">NOUVEAU</button>
 								<?php
-								while ($mail = $mails->fetch())
+								while ($mail = $mailInbox->fetch())
 								{
 									?>
 									<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">
@@ -59,7 +59,7 @@
 									</a>
 									<?php
 								}
-								$mails->closeCursor();
+								$mailInbox->closeCursor();
 								?>
 							</div>
 							<!-- /MAIL LIST -->

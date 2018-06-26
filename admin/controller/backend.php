@@ -7,7 +7,13 @@ require_once('model/UserManager.php');
 
 function adminHome()
 {
+	$mailManager = new MailManager();
+
+	$mails = $mailManager->getMails();
+	$mailsTop = $mailManager->getMails();
+
 	require('view/adminView.php');
+	
 }
 
 function connectionAdminPage()
@@ -58,8 +64,8 @@ function deconnection()
 function adminInbox()
 {
 	$mailManager = new MailManager();
-
-	$mails = $mailManager->getMails();
+	$mailsTop = $mailManager->getMails();
+	$mailInbox = $mailManager->getMails();
 	
 	require('view/inboxView.php');
 }
@@ -67,16 +73,17 @@ function adminInbox()
 function mailShow($mailId)
 {
 	$mailManager = new MailManager();
-	$mails = $mailManager->getMails();
+	$mailInbox = $mailManager->getMails();
+	$mailsTop = $mailManager->getMails();
 	$mailOne = $mailManager->getMail($mailId);
 
 	if (!empty($mailOne)) 
-    {
-        require('view/inboxView.php');
-    }
-    else
-    {
-        throw new Exception('Aucun message trouvé sur cette page');
-    }
+	{
+		require('view/inboxView.php');
+	}
+	else
+	{
+		throw new Exception('Aucun message trouvé sur cette page');
+	}
 
 }
