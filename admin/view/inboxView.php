@@ -57,8 +57,8 @@
 												<?php endif ; ?>
 											</div>
 											<div class="right">
-											<h3><?=$mail['mail_name'] ?> <small><?=$mail['mail_date'] ?></small></h3>
-												<p><?=$mail['mail_subject'] ?></p>
+											<h3>de : <?= htmlspecialchars($mail['mail_name']) ?> <small>recu le : <?=$mail['mail_date'] ?></small></h3>
+												<p><?= strtoupper(htmlspecialchars($mail['mail_subject'])) ?></p>
 											</div>
 										</div>
 									</a>
@@ -82,7 +82,7 @@
 											<p class="date"> <?=  $mailOne['mail_date'] ?> </p>
 										</div>
 										<div class="col-md-12">
-											<h4><?= htmlspecialchars($mailOne['mail_subject']) ?></h4>
+											<h4><?= strtoupper(htmlspecialchars($mailOne['mail_subject'])) ?></h4>
 										</div>
 									</div>
 									<div class="sender-info">
