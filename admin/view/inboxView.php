@@ -69,9 +69,9 @@
 										<div class="col-md-8">
 											<div class="btn-group">
 												<button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Répondre</button>
-												<button class="btn btn-sm btn-default" type="button"  data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
+												<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
 												<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
-												<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash"><i class="fa fa-trash-o"></i></button>
+												<a class="btn btn-sm btn-default" href="index.php?action=eraseMail&amp;mailId=<?= $_GET['id'] ?>"><i class="fa fa-trash-o"></i></a>
 											</div>
 										</div>
 										<div class="col-md-4 text-right">

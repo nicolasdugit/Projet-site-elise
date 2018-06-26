@@ -94,15 +94,14 @@ function eraseMail($mailId)
 {
 	$mailManager = new MailManager();
 
-	$affectedLines = $postManager->deletePost($mailId);
+	$affectedLines = $mailManager->eraseMail($mailId);
 
 	if ($affectedLines == false) 
 	{
-	    throw new Exception('Impossible de supprimer le mail !');       
+	    throw new Exception('Impossible de supprimer le mail !');
 	}
 	else
 	{
 	    header('Location: index.php?page=inbox');
 	}
-
 }
