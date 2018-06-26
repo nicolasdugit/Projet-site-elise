@@ -47,6 +47,13 @@ function connectionAdmin($pseudo, $pass)
 	}
 }
 
+function deconnection()
+{
+	$_SESSION = array();
+	session_destroy();
+	header('Location: index.php');
+}
+
 function adminInbox()
 {
 	$mailManager = new MailManager();

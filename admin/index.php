@@ -16,8 +16,8 @@ try {
 
 				}
 			}
-			elseif ($_GET['action'] == '') {
-				# code...
+			elseif ($_GET['action'] == 'deconnection') {
+				deconnection();
 			}
 		}
 		else {
