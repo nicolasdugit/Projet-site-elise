@@ -34,6 +34,14 @@ class MailManager extends Manager
 		return $affectedLines;
 	}
 
+	public function nonMarkedMail()
+	{
+		$db = $this->dbConnect();
+		$req = $db->query('SELECT id, mail_name, mail_mail, mail_content, mail_date, mail_subject, mail_status FROM boot_mail WHERE mail_status=0 ORDER BY id DESC');
+		
+		return $req;
+	}
+
 	public function eraseMail($mailId)
 	{
 		$db = $this->dbConnect();
