@@ -1,4 +1,4 @@
-<?php $title = 'PAGE ADIMN -- Poissonnerie du Port Chez Elise'; ?>
+<?php $title = 'PAGE ADMIN -Connexion- Poissonnerie du Port Chez Elise'; ?>
 
 <?php ob_start(); ?>
 
@@ -6,16 +6,16 @@
 	<div class="login_wrapper">
 		<div class="animate form login_form">
 			<section class="login_content">
-				<form action="">
-					<h1>Connexion administration</h1>
+				<form action="index.php?action=connection" method="post" >
+					<h1>Administration</h1>
 					<div>
-						<input type="text" class="form-control" placeholder="Username" required="" />
+						<input name="pseudo" type="text" class="form-control" placeholder="Username" required="" />
 					</div>
 					<div>
-						<input type="password" class="form-control" placeholder="Password" required="" />
+						<input name="pass" type="password" class="form-control" placeholder="Password" required="" />
 					</div>
 					<div>
-						<a class="btn btn-default submit" href="index.html">Connexion</a>
+						<input type="submit" value="Connection" class="btn btn-default submit">
 					</div>
 					<div class="clearfix"></div>
 					<div class="separator">

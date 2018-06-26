@@ -10,6 +10,43 @@ function adminHome()
 	require('view/adminView.php');
 }
 
+function connectionAdminPage()
+{
+	require('view/loginMainView.php');
+}
+
+function connectionAdmin($pseudo, $pass)
+{
+	$userManager = new UserManager();
+
+	$passTest = $userManager->connection($pseudo, $pass);
+
+	if ($pass == $passTest['user_pass']) {
+		$isPassCorrect = true;
+	}
+	else
+	{
+		$isPassCorrect = false;
+	}
+	if (!$passTest)
+	{
+		throw new Exception('Mauvais identifiant ou mot de passe');
+	}
+	else
+	{
+		if ($isPassCorrect == true) 
+		{
+			session_start();
+			$_SESSION['user_status'] = $passTest['user_status'];
+			header('Location: index.php');
+		}
+		else
+		{
+			throw new Exception('Mauvais identifiant ou mot de passe');
+		}
+	}
+}
+
 function adminInbox()
 {
 	$mailManager = new MailManager();
