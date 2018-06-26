@@ -10,7 +10,8 @@ function adminHome()
 	$mailManager = new MailManager();
 
 	$mails = $mailManager->getMails();
-	$mailsTop = $mailManager->getMails();
+	$mails = $mails->fetchAll();
+	// $mailsTop = $mailManager->getMails();
 
 	require('view/adminView.php');
 	

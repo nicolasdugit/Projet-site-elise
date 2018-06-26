@@ -36,29 +36,20 @@
 						<span class="badge bg-green">1</span>
 					</a>
 					<ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-						<?php
-						$i=0;
-						while ($mail = $mailsTop->fetch() AND $i<5)
-						{
-							$i++;
-							?>
-								<li>
-									<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">
-										<span class="image"><img src="view/images/img.jpg" alt="Profile Image" /></span>
-										<span>
-											<span><?=$mail['mail_name'] ?></span>
-											<span class="time"><?=$mail['mail_date'] ?></span>
-										</span>
-										<span class="message">
-											<?= htmlspecialchars($mail['mail_subject']) ?>
-										</span>
-									</a>
-								</li>
-							
-							<?php
-						}
-						$mailsTop->closeCursor();
-						?>
+						<?php foreach (array_slice($mails, 0, 3) as $mail) : ?>
+							<li>
+								<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">
+									<span class="image"><img src="view/images/img.jpg" alt="Profile Image" /></span>
+									<span>
+										<span><?=$mail['mail_name'] ?></span>
+										<span class="time"><?=$mail['mail_date'] ?></span>
+									</span>
+									<span class="message">
+										<?= htmlspecialchars($mail['mail_subject']) ?>
+									</span>
+								</a>
+							</li>
+						<?php endforeach ; ?>
 						<li>
 							<div class="text-center">
 								<a href="index.php?page=inbox">

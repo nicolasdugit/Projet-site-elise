@@ -8,7 +8,7 @@ class MailManager extends Manager
 	public function getMails()
 	{
 		$db = $this->dbConnect();
-		$req = $db->query('SELECT id, mail_name, mail_mail, mail_content, mail_date, mail_subject FROM boot_mail ORDER BY mail_date DESC');
+		$req = $db->query('SELECT id, mail_name, mail_mail, mail_content, mail_date, mail_subject FROM boot_mail ORDER BY id DESC');
 		
 		return $req;
 	}

@@ -29,12 +29,7 @@
 						<div class="clearfix"></div>
 					</div>
 					<div class="x_content">
-						<?php
-						$i=0;
-						while ($mail = $mails->fetch() AND $i<5)
-						{
-							$i++;
-							?>
+						<?php foreach (array_slice($mails, 0, 3) as $mail) : ?>
 							<article class="media event">
 								<a class="pull-left date">
 									<p class="month"><?=$mail['mail_date'] ?></p>
@@ -45,10 +40,7 @@
 									<p><?= htmlspecialchars($mail['mail_subject']) ?></p>
 								</div>
 							</article>
-							<?php
-						}
-						$mails->closeCursor();
-						?>
+						<?php endforeach ; ?>
 					</div>
 				</div>
 			</div>
