@@ -28,10 +28,6 @@
 	<body class="nav-md">
 		<div class="container body">
 			<div class="main_container">
-				<?php
-					require('view/templates/leftSideBar.php');
-					require('view/templates/topBar.php');
-				?>
 				<?= $content ?>
 				<?php require('view/templates/footer.php') ?>
 			</div>
