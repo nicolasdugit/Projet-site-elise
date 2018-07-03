@@ -11,6 +11,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+				<span class="icon"><i style="top: 0px;" class="fas fa-fish"></i></span>
 				<h2>Nos Plateaux de fruits de mer</h2>
 			</div>
 		</div>

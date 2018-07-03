@@ -6,8 +6,7 @@
 				<div class="colorlib-navbar-brand text-center">
 					<a class="colorlib-logo" href="index.php"><i style="top: 0px;" class="fas fa-fish"></i><span>Eli</span><span>Se</span></a>
 				</div>
-				
-				<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+					<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 			</div>
 		</div>
 	</div>

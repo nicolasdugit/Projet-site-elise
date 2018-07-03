@@ -1,3 +1,4 @@
+
 <footer>
 	<div id="footer">
 		<div class="container">
@@ -11,7 +12,7 @@
 					Hébergeur : 1&1 Internet SARL - 7, place de la Gare- BP 70109 - 57201 Sarreguemines Cedex - France <br>
 					Webmaster : <a href="http://www.fr.nicolasduquesne.com">Nicolas DUQUESNE</a> <br>
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						<span style="font-size: 1em; class="block">&copy;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+						<span style="font-size: 1em;" class="block">&copy;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 						<br></span> 
 					</p>
 					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->

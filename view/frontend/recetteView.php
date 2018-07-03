@@ -11,7 +11,21 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<h4>Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</h4>
+				<span class="icon"><i class="flaticon-cutlery"></i></span>
+				<h2>Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<article class="article-entry">
+					<a href="index.php" class="blog-img" style="background-image: url(public/images/blog-1.jpg);"></a>
+					<div class="desc">
+						<!-- <p class="meta"><span class="day">7</span><span class="month">May</span></p> -->
+						<p class="admin"><span>Ecrit par :</span> <span>Elise</span></p>
+						<h2><a href="index.php">Seiche à la tomate</a></h2>
+						<p>Spécialité du bassin !</p>
+					</div>
+				</article>
 			</div>
 		</div>
 	</div>

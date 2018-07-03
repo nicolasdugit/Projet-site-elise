@@ -1,3 +1,4 @@
+
 <div class="colorlib-reservation reservation-img" style="background-image: url(public/images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
 	<div class="overlay"></div>
 	<div class="container">
