@@ -16,24 +16,23 @@
 			</div>
 		</div>
 		<div class="row">
+			<?php
+			while ($recette = $recettes->fetch())
+			{
+			?>
 			<div class="col-md-4">
 				<article class="article-entry">
-					<a href="index.php?page=uneRecette" class="blog-img" style="background-image: url(public/images/blog-1.jpg);"></a>
+					<a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>" class="blog-img" style="background-image: url(<?= $recette['recette_img'] ?>);"></a>
 					<div class="desc">
-						<p class="admin"><span>Ecrit par :</span> <span>Elise</span></p>
-						<h2><a href="index.php?page=uneRecette">Seiche à la tomate</a></h2>
-						<p>Spécialité du bassin !</p>
-					</div>
-				</article>
-				<article class="article-entry">
-					<a href="index.php?page=uneRecette" class="blog-img" style="background-image: url(public/images/blog-2.jpg);"></a>
-					<div class="desc">
-						<p class="admin"><span>Ecrit par :</span> <span>Elise</span></p>
-						<h2><a href="index.php?page=uneRecette">Seiche à la tomate</a></h2>
-						<p>Spécialité du bassin !</p>
+						<p class="admin"><span>Ecrit par :</span> <span><?= htmlspecialchars($recette['recette_author']) ?></span></p>
+						<h2><a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>"><?= htmlspecialchars($recette['recette_title']) ?></a></h2>
+						<p><?= htmlspecialchars($recette['recette_subtitle']) ?></p>
 					</div>
 				</article>
 			</div>
+			<?php
+			}
+			?>
 		</div>
 	</div>
 </div>

@@ -18,7 +18,11 @@
 		</div>
 		<div class="row">
 			<div class="col-md-8">
-				<h4>Seiche à la tomate</h4>
+
+				<h4><?= htmlspecialchars($recette['recette_title']) ?></h4>
+
+
+
 			</div>
 			<div class="col-md-4">
 				<h3>Autres Recettes</h3>

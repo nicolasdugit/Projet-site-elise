@@ -1,7 +1,9 @@
 <?php
 use Poissonneriedupost\Elise\Frontend\model\MailManager;
+use Poissonneriedupost\Elise\Frontend\model\RecetteManager;
 
 require_once('model/MailManager.php');
+require_once('model/RecetteManager.php');
 
 function showHomePage()
 {
@@ -27,14 +29,20 @@ function nosPlateauxPage()
 }
 function nosRecettesPage()
 {
+	$recetteManager = new RecetteManager();
+
+	$recettes = $recetteManager->getRecettes();
+
 	require('view/frontend/recetteView.php');
 }
 function notreEquipePage()
 {
 	require('view/frontend/equipeView.php');
 }
-function uneRecettePage()
+function uneRecettePage($recetteId)
 {
+	$recetteManager = new RecetteManager();
+	$recette = $recetteManager->getRecette($recetteId);
 	require('view/frontend/recetteBlogView.php');
 }
 

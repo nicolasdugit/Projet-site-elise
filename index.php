@@ -23,7 +23,14 @@ try {
 			notreEquipePage();
 		}
 		elseif ($_GET['page'] == "uneRecette") {
-			uneRecettePage();
+			if (isset($_GET["recetteId"]) && $_GET['recetteId'] > 0)
+			{
+				uneRecettePage($_GET['recetteId']);
+			}
+			else
+			{
+				throw new Exception('Recette Non Trouvée');
+			}
 		}
 	}
 	elseif (isset($_GET['action'])) {

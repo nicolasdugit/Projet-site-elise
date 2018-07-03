@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  lun. 25 juin 2018 à 10:01
+-- Généré le :  mar. 03 juil. 2018 à 11:12
 -- Version du serveur :  10.1.26-MariaDB
 -- Version de PHP :  7.1.8
 
@@ -25,48 +25,86 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `boot-mail`
+-- Structure de la table `boot_mail`
 --
 
-CREATE TABLE `boot-mail` (
+CREATE TABLE `boot_mail` (
   `id` int(11) NOT NULL,
-  `mail-subjet` varchar(255) NOT NULL,
-  `mail-name` varchar(255) NOT NULL,
-  `mail-mail` varchar(255) NOT NULL,
-  `mail-date` date NOT NULL,
-  `mail-content` text NOT NULL,
-  `mail-status` tinyint(1) NOT NULL DEFAULT '0'
+  `mail_subject` varchar(255) NOT NULL,
+  `mail_name` varchar(255) NOT NULL,
+  `mail_mail` varchar(255) NOT NULL,
+  `mail_date` date NOT NULL,
+  `mail_content` text NOT NULL,
+  `mail_status` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `boot-users`
+-- Structure de la table `boot_recette`
 --
 
-CREATE TABLE `boot-users` (
+CREATE TABLE `boot_recette` (
   `id` int(11) NOT NULL,
-  `user-name` varchar(255) NOT NULL,
-  `user-mail` varchar(255) NOT NULL,
-  `user-pass` varchar(255) NOT NULL,
-  `user-status` tinyint(1) NOT NULL DEFAULT '0',
-  `user-picture` varchar(255) NOT NULL
+  `recette_title` varchar(255) NOT NULL,
+  `recette_img` varchar(255) NOT NULL,
+  `recette_subtitle` varchar(255) NOT NULL,
+  `recette_time` int(11) NOT NULL,
+  `recette_portion` int(11) NOT NULL,
+  `recette_instruction` text NOT NULL,
+  `recette_author` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `boot_recette`
+--
+
+INSERT INTO `boot_recette` (`id`, `recette_title`, `recette_img`, `recette_subtitle`, `recette_time`, `recette_portion`, `recette_instruction`, `recette_author`) VALUES
+(1, 'Seiche (ou encornet) à la tomate', 'public/images/blog-1.jpg', 'Spécialité du bassin', 30, 4, 'Faire revenir les oignons et l\'ail émincés dans de l\'huile d\'olive.\r\nRajouter les lamelles de seiches. Saler, Poivrer. En remuant souvent, laisser cuire 5 min.\r\nRajouter les tomates, le laurier et le thym. Ajouter un peu d\'eau si nécessaire et laisser cuire 10 min.\r\nEn fin de cuisson, rajouter un peu de crème fraiche pour adoucir la sauce.\r\nA déguster avec du riz.', 'Elise'),
+(2, 'Mule du Bassin et sa sauce verte', 'public/images/blog-2.jpg', 'Une recette typique du bassin', 25, 4, 'Badigeonnez les mules d\'huile d\'olive et les faire griller au barbecue ou à la plancha.\r\nPendant ce temps, préparer la sauce verte : hachez l\'ail et les échalotes, ciselez le persil. Dans un bol, mélangez ces ingrédients, ajoutez du vinaigre et de l\'huile d\'olive dans les proportions d\'une vinaigrette,\r\nSalez, poivrez.\r\nDéposez les mules cuits dans un plat, retirez la peau avec les écailles, arrosez de sauce verte et couvrez avec un papier d\'alu.\r\nLaissez reposer quelques instants afin que la sauce imprègne bien la chair des mules.\r\nServir avec des pommes de terre.', 'Elise');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `boot_users`
+--
+
+CREATE TABLE `boot_users` (
+  `id` int(11) NOT NULL,
+  `user_name` varchar(255) NOT NULL,
+  `user_mail` varchar(255) NOT NULL,
+  `user_pass` varchar(255) NOT NULL,
+  `user_status` tinyint(1) NOT NULL DEFAULT '0',
+  `user_picture` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `boot_users`
+--
+
+INSERT INTO `boot_users` (`id`, `user_name`, `user_mail`, `user_pass`, `user_status`, `user_picture`) VALUES
+(1, 'nicolas', 'duquesne.nico@gmail.com', 'toto', 1, 'moi.jpg');
 
 --
 -- Index pour les tables déchargées
 --
 
 --
--- Index pour la table `boot-mail`
+-- Index pour la table `boot_mail`
 --
-ALTER TABLE `boot-mail`
+ALTER TABLE `boot_mail`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `boot-users`
+-- Index pour la table `boot_recette`
 --
-ALTER TABLE `boot-users`
+ALTER TABLE `boot_recette`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `boot_users`
+--
+ALTER TABLE `boot_users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -74,15 +112,20 @@ ALTER TABLE `boot-users`
 --
 
 --
--- AUTO_INCREMENT pour la table `boot-mail`
+-- AUTO_INCREMENT pour la table `boot_mail`
 --
-ALTER TABLE `boot-mail`
+ALTER TABLE `boot_mail`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT pour la table `boot-users`
+-- AUTO_INCREMENT pour la table `boot_recette`
 --
-ALTER TABLE `boot-users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;COMMIT;
+ALTER TABLE `boot_recette`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT pour la table `boot_users`
+--
+ALTER TABLE `boot_users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
