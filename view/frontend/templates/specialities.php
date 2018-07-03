@@ -1,8 +1,9 @@
+
 <div class="colorlib-menu" style="padding-top: 0;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-				<span class="icon"><i class="flaticon-cutlery"></i></span>
+				<span class="icon"><i style="top: 0px;" class="fas fa-fish"></i></span>
 				<h2><?= $titleSpe ?></h2>
 				<p><?= $descriptionSpe ?></p>
 			</div>

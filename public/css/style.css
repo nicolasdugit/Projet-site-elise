@@ -287,7 +287,7 @@ header {
 
 #colorlib-hero {
   min-height: 750px;
-  background: #fff url(public/images/loader.gif) no-repeat center center;
+  background: #fff url(../images/loader.gif) no-repeat center center;
   width: 100%;
   float: left; }
   #colorlib-hero .flexslider {

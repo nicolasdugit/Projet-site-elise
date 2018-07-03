@@ -28,7 +28,7 @@
 		include('view/frontend/templates/specialities.php');
 	?>
 <!-- Video -->
-	<!-- <?php include('view/frontend/templates/video.php'); ?> -->
+	<?php include('view/frontend/templates/video.php'); ?>
 
 <!-- testimonies -->
 	<?php include('view/frontend/templates/testimonies.php'); ?>

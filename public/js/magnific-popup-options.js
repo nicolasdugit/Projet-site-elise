@@ -33,7 +33,7 @@ $(document).ready(function() {
 	};
 
 	var magnifVideo = function() {
-		$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		$('.popup-youtube, .popup-vimeo, .popup-facebook, .popup-gmaps').magnificPopup({
         disableOn: 700,
         type: 'iframe',
         mainClass: 'mfp-fade',
