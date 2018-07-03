@@ -22,6 +22,9 @@ try {
 		elseif ($_GET['page'] == "notreEquipe") {
 			notreEquipePage();
 		}
+		elseif ($_GET['page'] == "uneRecette") {
+			uneRecettePage();
+		}
 	}
 	elseif (isset($_GET['action'])) {
 		 if ($_GET['action'] == 'sentMail') {

@@ -33,6 +33,10 @@ function notreEquipePage()
 {
 	require('view/frontend/equipeView.php');
 }
+function uneRecettePage()
+{
+	require('view/frontend/recetteBlogView.php');
+}
 
 function sentMail($subject, $name, $mail, $content)
 {

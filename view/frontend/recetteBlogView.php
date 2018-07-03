@@ -12,11 +12,16 @@
 		<div class="row">
 			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 				<span class="icon"><i class="flaticon-cutlery"></i></span>
-				<h2>Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</h2>
+				<h2>Seiche à la tomate</h2>
+				<p>Spécialité du bassin !</p>
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-md-8">
+				<h4>Seiche à la tomate</h4>
+			</div>
 			<div class="col-md-4">
+				<h3>Autres Recettes</h3>
 				<article class="article-entry">
 					<a href="index.php?page=uneRecette" class="blog-img" style="background-image: url(public/images/blog-1.jpg);"></a>
 					<div class="desc">
