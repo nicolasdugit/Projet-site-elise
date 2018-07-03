@@ -7,6 +7,8 @@ require_once('model/RecetteManager.php');
 
 function showHomePage()
 {
+	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
 	require('view/frontend/homePage.php');
 }
 
@@ -42,7 +44,10 @@ function notreEquipePage()
 function uneRecettePage($recetteId)
 {
 	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
 	$recette = $recetteManager->getRecette($recetteId);
+	$aleatoire = rand(1, 3);
+	$recette1 = $recetteManager->getRecette($aleatoire);
 	require('view/frontend/recetteBlogView.php');
 }
 
