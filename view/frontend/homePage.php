@@ -30,11 +30,18 @@
 <!-- Video -->
 	<?php include('view/frontend/templates/video.php'); ?>
 
+	<?php include('view/frontend/templates/recettes.php'); ?>
+
+
 <!-- testimonies -->
 	<?php include('view/frontend/templates/testimonies.php'); ?>
+	
+	<?php include('view/frontend/templates/map.php'); ?>
 
 <?php $content = ob_get_clean(); ?>
 
 
 
 <?php require('view/frontend/templates/template.php'); ?>
+<!-- Mapbox -->
+<script src="public/js/mapbox.js"></script>

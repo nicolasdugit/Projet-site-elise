@@ -38,7 +38,7 @@
 						<i class="icon-envelope"></i>
 					</span>
 					<h2>Email</h2>
-					<p><a href="#">elise@poissonnerieduport.fr</a></p>
+					<p><a href="mailto:elise@poissonnerieduport.fr">elise@poissonnerieduport.fr</a></p>
 				</div>
 			</div>
 		</div>

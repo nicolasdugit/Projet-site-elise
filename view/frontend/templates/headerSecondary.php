@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="colorlib-navbar-brand text-center">
-					<a class="colorlib-logo" href="index.php"><i class="flaticon-cutlery"></i><span>Eli</span><span>Se</span></a>
+					<a class="colorlib-logo" href="index.php"><i style="top: 0px;" class="fas fa-fish"></i><span>Eli</span><span>Se</span></a>
 				</div>
 				<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 			</div>
