@@ -9,6 +9,7 @@ function showHomePage()
 {
 	$recetteManager = new RecetteManager();
 	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
 	require('view/frontend/homePage.php');
 }
 

@@ -5,27 +5,15 @@
 			<div class="col-md-4 col-pb-sm">
 				<h2>Dernières recettes</h2>
 				<hr>
-				<div class="f-entry">
-					<a href="#" class="featured-img" style="background-image: url(public/images/dish-5.jpg);"></a>
-					<div class="desc">
-						<span>May 5, 2018</span>
-						<h3><a href="#">How to cook beef Grilled with potato</a></h3>
+				<?php foreach (array_slice($recettes, 0, 3) as $recette) : ?>
+					<div class="f-entry">
+						<a href=""index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>"" class="featured-img" style="background-image: url(<?= $recette['recette_img'] ?>);"></a>
+						<div class="desc">
+							<span><?= htmlspecialchars($recette['recette_author']) ?></span>
+							<h3><a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>"><?= htmlspecialchars($recette['recette_title']) ?></a></h3>
+						</div>
 					</div>
-				</div>
-				<div class="f-entry">
-					<a href="#" class="featured-img" style="background-image: url(public/images/dish-7.jpg);"></a>
-					<div class="desc">
-						<span>May 5, 2018</span>
-						<h3><a href="#">A Japanese Master Chef</a></h3>
-					</div>
-				</div>
-				<div class="f-entry">
-					<a href="#" class="featured-img" style="background-image: url(public/images/dessert-3.jpg);"></a>
-					<div class="desc">
-						<span>May 5, 2018</span>
-						<h3><a href="#">Special Recipe for this month</a></h3>
-					</div>
-				</div>
+				<?php endforeach ; ?>
 			</div>
 			<div class="col-md-4 col-pb-sm">
 				<h2>Sites Amis</h2>
@@ -46,7 +34,7 @@
 				<div class="fb-page" 
   					data-href="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/"
   					data-heigth="400"
-  					data-tabs="timeline, events, message"
+  					data-tabs=""
   					data-hide-cover="false"
   					data-show-facepile="false"
   					data-adapt-container-width="true">

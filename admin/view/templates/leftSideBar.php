@@ -1,7 +1,7 @@
 <div class="col-md-3 left_col menu_fixed">
 	<div class="left_col scroll-view">
 		<div class="navbar nav_title" style="border: 0;">
-			<a href="index.php" class="site_title"><i class="fa fa-paw"></i> <span>ADMIN</span></a>	
+			<a href="index.php" class="site_title"><i class="fa fa-lock"></i> <span>ADMIN</span></a>	
 		</div>
 		<div class="clearfix"></div>
 		<!-- menu profile quick info -->

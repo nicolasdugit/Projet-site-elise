@@ -24,6 +24,7 @@
 		<link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 		<!-- Custom Theme Style -->
 		<link href="build/css/custom.min.css" rel="stylesheet">
+		
 	</head>
 	<body class="nav-md">
 		<div class="container body">

@@ -22,7 +22,7 @@
 						<div class="clearfix"></div>
 						<br />
 						<div>
-							<h1><i class="fa fa-paw"></i> Poissonnerie du Port Chez Elise</h1>
+							<h1><i class="fa fa-lock"></i> Poissonnerie du Port Chez Elise</h1>
 							<p>©2018 All Rights Reserved. Poissonnerie du Port Chez Elise</p>
 						</div>
 					</div>

@@ -10,9 +10,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<?php $i=0 ?>
-			<?php while($recette = $recettes->fetch() AND $i<3) : ?>
-			<?php $i++ ?>
+			<?php foreach (array_slice($recettes, 0, 3) as $recette) : ?>
 			<div class="col-md-4 animate-box">
 				<article class="article-entry">
 					<a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>" class="blog-img" style="background-image: url(<?= $recette['recette_img'] ?>);"></a>
@@ -23,7 +21,7 @@
 					</div>
 				</article>
 			</div>
-		<?php endwhile ; ?>
+		<?php endforeach ; ?>
 		</div>
 	</div>
 </div>
