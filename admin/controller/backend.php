@@ -116,3 +116,14 @@ function eraseMail($mailId)
 	    header('Location: index.php?page=inbox');
 	}
 }
+
+function creationRecette()
+{
+	$mailManager = new MailManager();
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
+
+
+	
+	require('view/creationRecetteView.php');
+}

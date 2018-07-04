@@ -5,19 +5,9 @@ require('controller/backend.php');
 try {
 	if (isset($_SESSION['user_status']) AND $_SESSION['user_status'] == 1) 
 	{
-		if (isset($_GET['action']) OR isset($_GET['page'])) 
+		if (isset($_GET['action']))
 		{
-			if ($_GET['page'] == 'inbox') 
-			{
-				if (isset($_GET['id']) && $_GET['id'] > 0)
-				{
-					mailShow($_GET['id']);
-				}
-				else {
-					adminInbox();
-				}
-			}
-			elseif ($_GET['action'] == 'deconnection') 
+			if ($_GET['action'] == 'deconnection') 
 			{
 				deconnection();
 			}
@@ -35,6 +25,23 @@ try {
 			else
 			{
 				throw new Exception('page Non Trouvée');
+			}
+		}
+		elseif (isset($_GET['page']))
+		{
+			if ($_GET['page'] == 'inbox') 
+			{
+				if (isset($_GET['id']) && $_GET['id'] > 0)
+				{
+					mailShow($_GET['id']);
+				}
+				else {
+					adminInbox();
+				}
+			}
+			elseif ($_GET['page'] == 'creationRecette') 
+			{
+				creationRecette();
 			}
 		}
 		else 

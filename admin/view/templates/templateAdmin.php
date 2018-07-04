@@ -22,6 +22,8 @@
 		<link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
 		<!-- bootstrap-daterangepicker -->
 		<link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+		<!-- bootstrap-wysiwyg -->
+    <link href="vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
 		<!-- Custom Theme Style -->
 		<link href="build/css/custom.min.css" rel="stylesheet">
 		
@@ -70,7 +72,11 @@
 		<script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
 		<!-- bootstrap-daterangepicker -->
 		<script src="vendors/moment/min/moment.min.js"></script>
-		<script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>		
+		<script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>	
+		<!-- bootstrap-wysiwyg -->
+    <script src="vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="vendors/google-code-prettify/src/prettify.js"></script>	
 		<!-- Custom Theme Scripts -->
 		<script src="build/js/custom.min.js"></script>
 	</body>
