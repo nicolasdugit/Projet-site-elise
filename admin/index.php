@@ -22,6 +22,17 @@ try {
 					throw new Exception('Aucun mail à supprimer');
 				}
 			}
+			elseif ($_GET['action'] == 'publishRecette')
+			{
+				if (isset($_POST['content'])) 
+				{
+					publishRecette($_POST['content']);
+				}
+				else
+				{
+					throw new Exception('Impossible de créer nouvelle recette');
+				}
+			}
 			else
 			{
 				throw new Exception('page Non Trouvée');

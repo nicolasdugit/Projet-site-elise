@@ -26,6 +26,7 @@
     <link href="vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
 		<!-- Custom Theme Style -->
 		<link href="build/css/custom.min.css" rel="stylesheet">
+
 		
 	</head>
 	<body class="nav-md">
@@ -79,5 +80,8 @@
     <script src="vendors/google-code-prettify/src/prettify.js"></script>	
 		<!-- Custom Theme Scripts -->
 		<script src="build/js/custom.min.js"></script>
+		<script src="build/js/nicolas.js"></script>
+
+
 	</body>
 </html>

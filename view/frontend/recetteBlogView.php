@@ -35,7 +35,7 @@
 				<p><?= htmlspecialchars($recette['recette_portion']) ?> personnes</p>
 				<h4>Ingrédients :</h4>
 				<h4>Instructions :</h4>
-				<p><?= htmlspecialchars($recette['recette_instruction']) ?></p>
+				<p><?= ($recette['recette_instruction']) ?></p>
 
 			</div>
 			<h3 class="animate-box">Recette Aléatoire</h3>

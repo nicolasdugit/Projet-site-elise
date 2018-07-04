@@ -5042,5 +5042,3 @@ if (typeof NProgress != 'undefined') {
 		init_autocomplete();
 				
 	});	
-	
-

@@ -1,9 +1,11 @@
 <?php
 use Poissonneriedupost\Elise\Backend\model\MailManager;
 use Poissonneriedupost\Elise\Backend\model\UserManager;
+use Poissonneriedupost\Elise\Backend\model\RecetteManager;
 
 require_once('model/MailManager.php');
 require_once('model/UserManager.php');
+require_once('model/RecetteManager.php');
 
 function adminHome()
 {
@@ -124,6 +126,21 @@ function creationRecette()
 	$mailsNonLu = $mailsNonLu->fetchAll();
 
 
-	
+
 	require('view/creationRecetteView.php');
+}
+
+function publishRecette($content)
+{
+	$recetteManager = new RecetteManager();
+
+	$affectedLines = $recetteManager->newRecette($content);
+	if ($affectedLines === false) 
+	{
+		throw new Exception('Impossible d\'ajouter la recette !');
+	}
+	else 
+	{
+		header('Location: index.php?page=creationRecette');
+	}
 }
