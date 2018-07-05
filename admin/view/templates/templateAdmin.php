@@ -23,11 +23,24 @@
 		<!-- bootstrap-daterangepicker -->
 		<link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 		<!-- bootstrap-wysiwyg -->
-    <link href="vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+		<link href="vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
 		<!-- Custom Theme Style -->
 		<link href="build/css/custom.min.css" rel="stylesheet">
 
-		
+		<!-- bootstrap-datetimepicker -->
+		<link href="vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+		<!-- Ion.RangeSlider -->
+		<link href="vendors/normalize-css/normalize.css" rel="stylesheet">
+		<link href="vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+		<link href="vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+		<!-- Bootstrap Colorpicker -->
+		<link href="vendors/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+		<!-- Cropper -->
+		<link href="vendors/cropper/dist/cropper.min.css" rel="stylesheet">
+		<!-- Dropzone.js -->
+		<link href="vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+		<!-- Custom Theme Style -->
+		<link href="build/css/custom.min.css" rel="stylesheet">
 	</head>
 	<body class="nav-md">
 		<div class="container body">
@@ -75,9 +88,34 @@
 		<script src="vendors/moment/min/moment.min.js"></script>
 		<script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>	
 		<!-- bootstrap-wysiwyg -->
-    <script src="vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
-    <script src="vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
-    <script src="vendors/google-code-prettify/src/prettify.js"></script>	
+		<script src="vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+		<script src="vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+		<script src="vendors/google-code-prettify/src/prettify.js"></script>
+
+
+
+
+		<!-- bootstrap-daterangepicker -->
+		<script src="vendors/moment/min/moment.min.js"></script>
+		<script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+		<!-- bootstrap-datetimepicker -->    
+		<script src="vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+		<!-- Ion.RangeSlider -->
+		<script src="vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+		<!-- Bootstrap Colorpicker -->
+		<script src="vendors/mjolnic-bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+		<!-- jquery.inputmask -->
+		<script src="vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+		<!-- jQuery Knob -->
+		<script src="vendors/jquery-knob/dist/jquery.knob.min.js"></script>
+		<!-- Cropper -->
+		<script src="vendors/cropper/dist/cropper.min.js"></script>
+
+
+		<!-- Dropzone.js -->
+		<script src="vendors/dropzone/dist/min/dropzone.min.js"></script>
+
+
 		<!-- Custom Theme Scripts -->
 		<script src="build/js/custom.min.js"></script>
 		<script src="build/js/nicolas.js"></script>

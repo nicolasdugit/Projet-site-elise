@@ -130,12 +130,12 @@ function creationRecette()
 	require('view/creationRecetteView.php');
 }
 
-function publishRecette($content)
+function publishRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author)
 {
 	$recetteManager = new RecetteManager();
 
-	$affectedLines = $recetteManager->newRecette($content);
-	if ($affectedLines === false) 
+	$affectedLines = $recetteManager->newRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author);
+	if ($affectedLines == false) 
 	{
 		throw new Exception('Impossible d\'ajouter la recette !');
 	}
