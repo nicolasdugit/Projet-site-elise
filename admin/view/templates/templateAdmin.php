@@ -36,7 +36,7 @@
 		<!-- Bootstrap Colorpicker -->
 		<link href="vendors/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet">
 		<!-- Cropper -->
-		<link href="vendors/cropper/dist/cropper.min.css" rel="stylesheet">
+		<!-- <link href="vendors/cropper/dist/cropper.min.css" rel="stylesheet"> -->
 		<!-- Dropzone.js -->
 		<link href="vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
 		<!-- Custom Theme Style -->
@@ -109,7 +109,7 @@
 		<!-- jQuery Knob -->
 		<script src="vendors/jquery-knob/dist/jquery.knob.min.js"></script>
 		<!-- Cropper -->
-		<script src="vendors/cropper/dist/cropper.min.js"></script>
+		<!-- <script src="vendors/cropper/dist/cropper.min.js"></script> -->
 
 
 		<!-- Dropzone.js -->

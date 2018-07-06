@@ -7,11 +7,13 @@
 	?>
 	
 	<div class="right_col" role="main">
+									<?php include('view/templates/imageUpload.php') ?>
 		<div class="">
 			<div class="page-title">
 				<div class="title_left">
 					<h3>Editer une nouvelle recette</h3>
 				</div>
+
 				<div class="title_right">
 					<div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
 						<div class="input-group">
@@ -23,8 +25,10 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="clearfix"></div>
 			<div class="row">
+	
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="x_panel">
 						<div class="x_title">
@@ -70,6 +74,10 @@
 										</div>
 									</div>
 								</div>
+								<div class="col-md-6">
+									
+									<input type="text" id="recette_image" name="recette_image" required>
+								</div>
 								<div class="row">
 									<div class="col-md-12">
 										<label for="">Etapes de la recette :</label>
@@ -104,6 +112,7 @@
 									<div class="col-md-6">
 										<input class="btn btn-success" type="submit" id="recetteForm" value="Envoyer">
 									</div>
+
 								</div>
 							</form>
 						</div>

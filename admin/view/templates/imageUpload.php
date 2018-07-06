@@ -17,11 +17,11 @@
 					</div>
 					<div class="x_content">
 						<p>Drag multiple files to the box below for multi upload or click to select files. This is for demonstration purposes only, the files are not uploaded to any server.</p>
-						<form action="index.php?action=uploadImage"  method="post" class="dropzone">
-					
-							<input type="submit" name="submit" value="envoyer image">
-						</form>
+						<form action="php/upload.php" class="dropzone" id="dropzoneElement">
 							
+						</form>
+						<button class="btn btn-success" id="btnUpload">Télécharger</button>
+						<input type="text" id="namePhotos">
 					</div>
 				</div>
 			</div>
