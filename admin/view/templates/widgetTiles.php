@@ -6,7 +6,7 @@
 			<div class="tile-stats">
 				<div class="icon"><i class="fa fa-comments-o"></i></div>
 				<div class="count"><?= count($mailsNonLu) ?></div>
-				<h3>Nouveau Message</h3>
+				<h3>Nouveau(s) Message(s)</h3>
 				<p>Vous avez <?= count($mailsNonLu) ?> nouveau(s) message(s)</p>
 			</div>
 		</div>

@@ -15,31 +15,50 @@ function showHomePage()
 
 function contactPage()
 {
+	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
 	require('view/frontend/contactView.php');
 }
 
 function notreBancPage()
 {
+	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
+
 	require('view/frontend/surLeBancView.php');
 }
 function platCuisinePage()
 {
+	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
+
 	require('view/frontend/platsCuisineView.php');
 }
 function nosPlateauxPage()
 {
+	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
+
 	require('view/frontend/plateauxView.php');
 }
 function nosRecettesPage()
 {
 	$recetteManager = new RecetteManager();
-
 	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
 
 	require('view/frontend/recetteView.php');
 }
 function notreEquipePage()
 {
+	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
+
 	require('view/frontend/equipeView.php');
 }
 function uneRecettePage($recetteId)

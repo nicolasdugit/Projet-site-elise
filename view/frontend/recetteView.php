@@ -16,7 +16,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<?php while ($recette = $recettes->fetch()) : ?>
+			<?php foreach ($recettes as $recette) : ?>
 			<div class="col-md-4">
 				<article class="article-entry">
 					<a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>" class="blog-img" style="background-image: url(<?= $recette['recette_img'] ?>);"></a>
@@ -27,7 +27,7 @@
 					</div>
 				</article>
 			</div>
-			<?php endwhile ; ?>
+			<?php endforeach ; ?>
 		</div>
 	</div>
 </div>
