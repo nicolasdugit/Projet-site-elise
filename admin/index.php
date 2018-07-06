@@ -33,6 +33,17 @@ try {
 					throw new Exception('Impossible de créer nouvelle recette');
 				}
 			}
+			elseif ($_GET['action'] == 'modifRecette')
+			{
+				if (isset($_POST['recette_title']) && isset($_POST['recette_subtitle']) && isset($_POST['recette_time']) && isset($_POST['recette_portion']) && isset($_POST['recette_author']) && isset($_POST['recette_image']) && isset($_POST['recette_id'])) 
+				{
+					modifRecette($_POST['recette_title'], $_POST['recette_subtitle'], $_POST['recette_time'], $_POST['recette_portion'], $_POST['recette_instruction'], $_POST['recette_author'], $_POST['recette_image'], $_POST['recette_id']);
+				}
+				else
+				{
+					throw new Exception('Impossible de modifier la recette');
+				}
+			}
 			else
 			{
 				throw new Exception('page Non Trouvée');
@@ -53,6 +64,17 @@ try {
 			elseif ($_GET['page'] == 'creationRecette') 
 			{
 				creationRecette();
+			}
+			elseif ($_GET['page'] == 'editRecette') 
+			{
+				if (isset($_GET['id']) && $_GET['id'] > 0)
+				{
+					editRecette($_GET['id']);
+				}
+				else
+				{
+					throw new Exception('recette Non Trouvée');
+				}
 			}
 			elseif ($_GET['page'] == 'uploadImage') 
 			{
@@ -83,6 +105,7 @@ try {
 					throw new Exception('Probleme identification');
 				}
 			}
+			
 		}
 		else 
 		{

@@ -139,6 +139,10 @@ function creationRecette()
 	$images = $imageManager->getImages();
 	$images = $images->fetchAll();
 
+	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
+
 
 	require('view/creationRecetteView.php');
 }
@@ -157,6 +161,35 @@ function publishRecette($recette_title, $recette_subtitle, $recette_time, $recet
 		header('Location: index.php?page=creationRecette');
 	}
 }
+
+function editRecette($recette_id)
+{
+	$mailManager = new MailManager();
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
+
+	$recetteManager = new RecetteManager();
+	$recette = $recetteManager->getRecette($recette_id);
+
+	require('view/editRecetteView.php');
+}
+
+function modifRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image, $recette_id)
+{
+	$recetteManager = new RecetteManager();
+
+	$affectedLines = $recetteManager->modifRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image, $recette_id);
+
+	if ($affectedLines == false) 
+	{
+		throw new Exception('Impossible modif recette !');
+	}
+	else 
+	{
+		header('Location: index.php');
+	}
+}
+
 
 function uploadImage()
 {

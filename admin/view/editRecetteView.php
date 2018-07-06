@@ -30,56 +30,54 @@
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="x_panel">
 						<div class="x_title">
-							<h2>Creer une nouvelle recette<small>publication en ligne</small></h2>
+							<h2>Modifier une Recette Existante<small>recette déjà en ligne</small></h2>
 							<ul class="nav navbar-right panel_toolbox">
-								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
+								<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
 							</ul>
 							<div class="clearfix"></div>
 						</div>
-						<div class="x_content" style="display: none;">
-							<form method="post" action="index.php?action=publishRecette">
+						<div class="x_content">
+							<form method="post" action="index.php?action=modifRecette">
 								<div class="col-md-4">
 									<div class="form-horizontal form-label-left">
 										<div class="form-group col-md-12">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-title"> Titre de la recette <span class="required">*</span></label>
 											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input class="form-control" type="text" id="recette_title" name="recette_title" required="required">
+												<input class="form-control" type="text" id="recette_title" name="recette_title" value="<?= htmlspecialchars($recette['recette_title']) ?>" required="required">
 											</div>
 										</div>
 										<div class="form-group col-md-12">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-subtitle"> Soustitre de la recette <span class="required">*</span></label>
 											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input class="form-control" type="text" id="recette_subtitle" name="recette_subtitle" required="required">
+												<input class="form-control" type="text" id="recette_subtitle" name="recette_subtitle" value="<?= htmlspecialchars($recette['recette_subtitle']) ?>" required="required">
 											</div>
 										</div>
 										<div class="form-group col-md-12">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-time"> Temps de préparation <span class="required">*</span></label>
 											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input class="form-control" type="text" id="recette_time" name="recette_time" required="required">
+												<input class="form-control" type="text" id="recette_time" name="recette_time" value="<?= htmlspecialchars($recette['recette_time']) ?>" required="required">
 											</div>
 										</div>
 										<div class="form-group col-md-12">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-portion"> Nombre de portion <span class="required">*</span></label>
 											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input class="form-control" type="text" id="recette_portion" name="recette_portion" required="required">
+												<input class="form-control" type="text" id="recette_portion" name="recette_portion" value="<?= htmlspecialchars($recette['recette_portion']) ?>" required="required">
 											</div>
 										</div>
 										<div class="form-group col-md-12">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-author"> Auteur de la recette <span class="required">*</span></label>
 											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input class="form-control" type="text" id="recette_author" name="recette_author" required="required">
+												<input class="form-control" type="text" id="recette_author" name="recette_author" value="<?= htmlspecialchars($recette['recette_author']) ?>" required="required">
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="col-md-8">
 									<div class="col-md-12">
-									<?php if (isset($_GET['id'])) : ?>
 										<div class="col-md-6">
-											<input type="hidden" id="recette_image" name="recette_image" value="<?= $_GET['id'] ?>" required>
-											<img class="img-thumbnail" style="height: auto; width: auto;" src="../<?= $_GET['id'] ?>" alt="image">
+											<input type="hidden" id="recette_image" name="recette_image" value="<?= htmlspecialchars($recette['recette_img']) ?>" required>
+											<img class="img-thumbnail" style="height: auto; width: auto;" src="../<?= htmlspecialchars($recette['recette_img']) ?>" alt="image">
 										</div>
-									<?php endif ; ?>
 										<div class="col-md-6">
 											<a href="index.php?page=showImage">
 												<div class="tile-stats">
@@ -119,36 +117,20 @@
 												<a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
 											</div>
 										</div>
-										<div class="editor-wrapper" id="editor-one"></div>
+										<div class="editor-wrapper" id="editor-one"><?= ($recette['recette_instruction']) ?></div>
 										<div class="ln_solid"></div> 
 										<input type="hidden" id="recette_instruction" name="recette_instruction" required>
+										<input type="hidden" id="recette_id" name="recette_id" value="<?= $recette['id'] ?>" required>
 									</div>
 									<div class="col-md-6">
-										<input class="btn btn-success" type="submit" id="recetteForm" value="Envoyer">
+										<input class="btn btn-success" type="submit" id="recetteForm" value="Modifier">
 									</div>
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="x_panel">
-						<div class="x_title">
-							<h2>Modifier /Supprimer une Recette<small>Editer une recette existante</small></h2>
-							<ul class="nav navbar-right panel_toolbox">
-								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
-							</ul>
-							<div class="clearfix"></div>
-						</div>
-						<div class="x_content" style="display: none;">
-							<?php foreach ($recettes as $recette) : ?>
-								<a href="index.php?page=editRecette&amp;id=<?= $recette['id'] ?> ">
-									<h1><?= $recette['recette_title'] ?><?= $recette['id'] ?></h1>
-								</a>
-							<?php endforeach ; ?>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>    

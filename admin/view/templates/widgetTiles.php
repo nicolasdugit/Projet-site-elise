@@ -28,8 +28,8 @@
 			<div class="tile-stats">
 				<div class="icon"><i class="fa fa-pencil-square-o"></i></div>
 				<div class="count"><?= count($recettes) ?></div>
-				<h3>Creer une Nouvelle Recette</h3>
-				<p>Publier une nouvelle recette en ligne</p>
+				<h3>Creer / Modifier une Recette</h3>
+				<p>Publier une nouvelle recette en ligne, modifier une recette existante</p>
 			</div>
 		</div>
 	</a>
