@@ -12,12 +12,20 @@ require_once('model/ImageManager.php');
 function adminHome()
 {
 	$mailManager = new MailManager();
+	$recetteManager = new RecetteManager();
+	$imageManager = new ImageManager();
 
 	$mails = $mailManager->getMails();
 	$mails = $mails->fetchAll();
 
 	$mailsNonLu = $mailManager->nonMarkedMail();
 	$mailsNonLu = $mailsNonLu->fetchAll();
+
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
+
+	$images = $imageManager->getImages();
+	$images = $images->fetchAll();
 
 	require('view/adminView.php');
 	
@@ -148,4 +156,25 @@ function publishRecette($recette_title, $recette_subtitle, $recette_time, $recet
 	{
 		header('Location: index.php?page=creationRecette');
 	}
+}
+
+function uploadImage()
+{
+	$mailManager = new MailManager();
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
+	require('view/uploadImageView.php');
+}
+
+function showImage()
+{
+	$mailManager = new MailManager();
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
+
+	$imageManager = new ImageManager();
+	$images = $imageManager->getImages();
+	$images = $images->fetchAll();
+
+	require('view/selectImageView.php');
 }

@@ -22,4 +22,12 @@ class RecetteManager extends Manager
 
 		return $affectedLines;
 	}
+
+	public function getRecettes()
+	{
+		$db = $this->dbConnect();
+		$req = $db->query('SELECT * FROM boot_recette ORDER BY id DESC');
+
+		return $req;
+	}
 }

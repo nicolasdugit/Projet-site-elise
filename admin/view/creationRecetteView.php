@@ -7,7 +7,6 @@
 	?>
 	
 	<div class="right_col" role="main">
-									<?php include('view/templates/imageUpload.php') ?>
 		<div class="">
 			<div class="page-title">
 				<div class="title_left">
@@ -75,14 +74,24 @@
 									</div>
 								</div>
 								<div class="col-md-8">
-									<?php foreach (array_slice($images, 0, 3) as $image) : ?>
-										<div class="col-md-4">
-											<div onclick="infoImage(this)" id="<?= $image['image_name'] ?>" class="img-fluid" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;">
+									<div class="col-md-12">
+									<?php if (isset($_GET['id'])) : ?>
+										<div class="col-md-6">
+											<input type="hidden" id="recette_image" name="recette_image" value="<?= $_GET['id'] ?>" required>
+											<img class="img-thumbnail" style="height: auto; width: auto;" src="../<?= $_GET['id'] ?>" alt="">
 										</div>
+									<?php endif ; ?>
+									<div class="col-md-6">
+										<a href="index.php?page=showImage">
+											<div class="tile-stats">
+												<br>
+												<div class="icon"><i class="fa fa-image"></i></div>
+													<h3>Selectionner une <br>image</h3>
+												<br>
+											</div>
+										</a>
 									</div>
-									
-									<?php endforeach ?>
-									<input type="hidden" id="recette_image" name="recette_image" required>
+									</div>
 								</div>
 								<div class="row">
 									<div class="col-md-12">

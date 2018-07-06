@@ -6,12 +6,10 @@ $(document).ready(function(){
 
 function infoImage(elem) {
 	$("#recette_image").val(elem.id);
+	$toto = 2;
+	window.location.href = "index.php?page=creationRecette&id=" + elem.id;
+	
 }
-
-
-
-
-
 
 Dropzone.options.dropzoneElement = {
 	maxFiles: 2,
@@ -35,17 +33,10 @@ Dropzone.options.dropzoneElement = {
 			}
 		});
 
-
-		this.on("sending", function(file, xhr, formData) {
-			// formData.append("status", 'new');
-			// formData.append("user_id", 1);
-			$('#namePhotos').val(file.status);
-		});
-
 		/* On Success, do whatever you want */
-		this.on("success", function(file, responseText) {      
+		this.on("success", function(file, responseText) {
 			alert('Success');
+			window.location.href = "index.php?page=showImage";
 		});
 	}
-
 }

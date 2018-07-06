@@ -54,6 +54,14 @@ try {
 			{
 				creationRecette();
 			}
+			elseif ($_GET['page'] == 'uploadImage') 
+			{
+				uploadImage();
+			}
+			elseif ($_GET['page'] == 'showImage') 
+			{
+				showImage();
+			}
 		}
 		else 
 		{
