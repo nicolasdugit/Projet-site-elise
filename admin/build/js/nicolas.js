@@ -4,6 +4,15 @@ $(document).ready(function(){
 	});
 });
 
+function infoImage(elem) {
+	$("#recette_image").val(elem.id);
+}
+
+
+
+
+
+
 Dropzone.options.dropzoneElement = {
 	maxFiles: 2,
 	maxFilesize: 500, // File size in Mb

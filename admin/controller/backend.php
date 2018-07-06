@@ -2,10 +2,12 @@
 use Poissonneriedupost\Elise\Backend\model\MailManager;
 use Poissonneriedupost\Elise\Backend\model\UserManager;
 use Poissonneriedupost\Elise\Backend\model\RecetteManager;
+use Poissonneriedupost\Elise\Backend\model\ImageManager;
 
 require_once('model/MailManager.php');
 require_once('model/UserManager.php');
 require_once('model/RecetteManager.php');
+require_once('model/ImageManager.php');
 
 function adminHome()
 {
@@ -125,16 +127,19 @@ function creationRecette()
 	$mailsNonLu = $mailManager->nonMarkedMail();
 	$mailsNonLu = $mailsNonLu->fetchAll();
 
+	$imageManager = new ImageManager();
+	$images = $imageManager->getImages();
+	$images = $images->fetchAll();
 
 
 	require('view/creationRecetteView.php');
 }
 
-function publishRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author)
+function publishRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image)
 {
 	$recetteManager = new RecetteManager();
 
-	$affectedLines = $recetteManager->newRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author);
+	$affectedLines = $recetteManager->newRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image);
 	if ($affectedLines == false) 
 	{
 		throw new Exception('Impossible d\'ajouter la recette !');

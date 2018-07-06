@@ -24,9 +24,9 @@ try {
 			}
 			elseif ($_GET['action'] == 'publishRecette')
 			{
-				if (isset($_POST['recette_title']) && isset($_POST['recette_subtitle']) && isset($_POST['recette_time']) && isset($_POST['recette_portion']) && isset($_POST['recette_author'])) 
+				if (isset($_POST['recette_title']) && isset($_POST['recette_subtitle']) && isset($_POST['recette_time']) && isset($_POST['recette_portion']) && isset($_POST['recette_author']) && isset($_POST['recette_image'])) 
 				{
-					publishRecette($_POST['recette_title'], $_POST['recette_subtitle'], $_POST['recette_time'], $_POST['recette_portion'], $_POST['recette_instruction'], $_POST['recette_author']);
+					publishRecette($_POST['recette_title'], $_POST['recette_subtitle'], $_POST['recette_time'], $_POST['recette_portion'], $_POST['recette_instruction'], $_POST['recette_author'], $_POST['recette_image']);
 				}
 				else
 				{

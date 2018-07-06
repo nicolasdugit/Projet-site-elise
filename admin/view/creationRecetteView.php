@@ -40,7 +40,7 @@
 						</div>
 						<div class="x_content">
 							<form method="post" action="index.php?action=publishRecette">
-								<div class="col-md-6">
+								<div class="col-md-4">
 									<div class="form-horizontal form-label-left">
 										<div class="form-group col-md-12">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-title"> Titre de la recette <span class="required">*</span></label>
@@ -74,9 +74,15 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-8">
+									<?php foreach (array_slice($images, 0, 3) as $image) : ?>
+										<div class="col-md-4">
+											<div onclick="infoImage(this)" id="<?= $image['image_name'] ?>" class="img-fluid" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;">
+										</div>
+									</div>
 									
-									<input type="text" id="recette_image" name="recette_image" required>
+									<?php endforeach ?>
+									<input type="hidden" id="recette_image" name="recette_image" required>
 								</div>
 								<div class="row">
 									<div class="col-md-12">
