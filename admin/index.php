@@ -44,6 +44,17 @@ try {
 					throw new Exception('Impossible de modifier la recette');
 				}
 			}
+			elseif ($_GET['action'] == 'deleteRecette') 
+			{
+				if (isset($_GET['recetteId']) && $_GET['recetteId'] > 0) 
+				{
+					deleteRecette($_GET['recetteId']);
+				}
+				else
+				{
+					throw new Exception('Aucun mail à supprimer');
+				}
+			}
 			else
 			{
 				throw new Exception('page Non Trouvée');

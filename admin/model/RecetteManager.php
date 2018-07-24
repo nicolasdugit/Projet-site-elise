@@ -60,4 +60,15 @@ class RecetteManager extends Manager
 		return $affectedLines;
 	}
 
+	public function deleteRecette($recetteId)
+	{
+		$db = $this->dbConnect();
+		$req = $db->prepare('DELETE FROM boot_recette WHERE id = :recetteId');
+		$affectedLines = $req->execute(array(
+			':recetteId' => $recetteId,
+		));
+
+		return $affectedLines;
+	}
+
 }

@@ -14,7 +14,6 @@
 					<article class="media event">
 						<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>" class="pull-left date">
 							<p class="month"><?= $mail['mail_date'] ?></p>
-							<p class="day"><?=$mail['mail_date'][8],$mail['mail_date'][9]?></p>
 						</a>
 						<div class="media-body">
 							<a class="title" href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>"><?= htmlspecialchars($mail['mail_name']) ?> </a>

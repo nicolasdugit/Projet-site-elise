@@ -211,3 +211,19 @@ function showImage()
 
 	require('view/selectImageView.php');
 }
+
+function deleteRecette($recetteId)
+{
+	$recetteManager = new RecetteManager();
+
+	$affectedLines = $recetteManager->deleteRecette($recetteId);
+
+	if ($affectedLines == false) 
+	{
+	    throw new Exception('Impossible de supprimer cette recette !');
+	}
+	else
+	{
+	    header('Location: index.php?page=creationRecette');
+	}
+}

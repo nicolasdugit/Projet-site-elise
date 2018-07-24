@@ -30,8 +30,8 @@
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="x_panel">
 						<div class="x_title">
-							<h2>Creer une nouvelle recette<small>publication en ligne</small></h2>
-							<ul class="nav navbar-right panel_toolbox">
+							<h2 class="collapse-link">Creer une nouvelle recette<small>publication en ligne</small></h2>
+							<ul class="nav navbar-right panel_toolbox ">
 								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
 							</ul>
 							<div class="clearfix"></div>
@@ -134,7 +134,7 @@
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="x_panel">
 						<div class="x_title">
-							<h2>Modifier /Supprimer une Recette<small>Editer une recette existante</small></h2>
+							<h2 class="collapse-link">Modifier /Supprimer une Recette<small>Editer une recette existante</small></h2>
 							<ul class="nav navbar-right panel_toolbox">
 								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
 							</ul>

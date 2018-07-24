@@ -124,6 +124,7 @@
 									</div>
 									<div class="col-md-6">
 										<input class="btn btn-success" type="submit" id="recetteForm" value="Modifier">
+										<a href="index.php?action=deleteRecette&amp;recetteId=<?= ($recette['id']) ?>" class="btn btn-danger">Supprimer</a>
 									</div>
 								</div>
 							</form>
