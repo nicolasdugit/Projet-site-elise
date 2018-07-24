@@ -38,7 +38,7 @@
   					data-hide-cover="false"
   					data-show-facepile="false"
   					data-adapt-container-width="true">
-  				<blockquote cite="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/">Poissonnerie du Port &quot;Chez Elise&quot;</a></blockquote>
+  				<blockquote cite="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/" class="fb-xfbml-parse-ignore"><a href="https://web.facebook.com/Poissonnerie-du-Port-Chez-Elise-274291612588893/" target="_blank">Poissonnerie du Port &quot;Chez Elise&quot;</a></blockquote>
   				</div>
 			</div>
 		</div>

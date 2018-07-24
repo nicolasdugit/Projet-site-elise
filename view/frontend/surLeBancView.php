@@ -112,7 +112,7 @@
 				<div class="row">
 					<div class="about-desc">
 						<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-							<h2>LES FRUITS DE MER</h2>
+							<h2>RAYON EPICERIE ET VINS</h2>
 						</div>
 						<div class="col-md-12 animate-box">
 							<span>Pour emporter un peu du Bassin chez vous, choisissez parmi les conserves de produits régionaux : rillettes d’huîtres, de bonite, de bonite, de mule ; soupes de poissons bisque de crabe ; lamproie à la bordelaise ; sardines à l'huile et autres aromates ; calamars farcis. Découvrez aussi notre sélection de vin pour accompagner vas repas poissons ou fruits de mer.</span>
