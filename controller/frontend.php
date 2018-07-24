@@ -8,6 +8,7 @@ require_once('model/RecetteManager.php');
 function showHomePage()
 {
 	$recetteManager = new RecetteManager();
+	
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 	require('view/frontend/homePage.php');
@@ -16,6 +17,7 @@ function showHomePage()
 function contactPage()
 {
 	$recetteManager = new RecetteManager();
+
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 	require('view/frontend/contactView.php');
@@ -24,6 +26,7 @@ function contactPage()
 function notreBancPage()
 {
 	$recetteManager = new RecetteManager();
+
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 
@@ -32,6 +35,7 @@ function notreBancPage()
 function platCuisinePage()
 {
 	$recetteManager = new RecetteManager();
+
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 
@@ -40,6 +44,7 @@ function platCuisinePage()
 function nosPlateauxPage()
 {
 	$recetteManager = new RecetteManager();
+
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 
@@ -48,6 +53,7 @@ function nosPlateauxPage()
 function nosRecettesPage()
 {
 	$recetteManager = new RecetteManager();
+
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 
@@ -56,6 +62,7 @@ function nosRecettesPage()
 function notreEquipePage()
 {
 	$recetteManager = new RecetteManager();
+
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 
@@ -64,10 +71,12 @@ function notreEquipePage()
 function uneRecettePage($recetteId)
 {
 	$recetteManager = new RecetteManager();
-	$recettes = $recetteManager->getRecettes();
+
 	$recette = $recetteManager->getRecette($recetteId);
-	$aleatoire = rand(1, 3);
-	$recette1 = $recetteManager->getRecette($aleatoire);
+	
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
+
 	require('view/frontend/recetteBlogView.php');
 }
 
