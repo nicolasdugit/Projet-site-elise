@@ -27,9 +27,9 @@
 			<div class="menu_section">
 				<h3>General</h3>
 				<ul class="nav side-menu">
-					<li><a href="index.php"><i class="fa fa-home"></i> Acceuil</a></li>
+					<li><a href="index.php"><i class="fa fa-home"></i> Accueil</a></li>
 					<li><a href="index.php?page=inbox"><i class="fa fa-envelope-o"></i>	 Messages</a></li>
-					<li><a href="index.php?page=creationRecette"><i class="fa fa-pencil-square-o"></i> Recettes </a></li>
+					<li><a href="index.php?page=gestionRecette"><i class="fa fa-pencil-square-o"></i> Recettes </a></li>
 					<li><a href="index.php?page=uploadImage"><i class="fa fa-image"></i> Images </a></li>
 						
 

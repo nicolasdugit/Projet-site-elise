@@ -32,18 +32,18 @@
 						<div class="x_title">
 							<h2 class="collapse-link">Creer une nouvelle recette<small>publication en ligne</small></h2>
 							<ul class="nav navbar-right panel_toolbox ">
-								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
+								<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
 							</ul>
 							<div class="clearfix"></div>
 						</div>
-						<div class="x_content" style="display: none;">
+						<div class="x_content">
 							<form method="post" action="index.php?action=publishRecette">
 								<div class="col-md-4">
 									<div class="form-horizontal form-label-left">
 										<div class="form-group col-md-12">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-title"> Titre de la recette <span class="required">*</span></label>
+											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-title" > Titre de la recette <span class="required">*</span></label>
 											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input class="form-control" type="text" id="recette_title" name="recette_title" required="required">
+												<input class="form-control" type="text" id="recette_title" name="recette_title" value="<?= htmlspecialchars($recetteTitle) ?>" required="required">
 											</div>
 										</div>
 										<div class="form-group col-md-12">
@@ -128,24 +128,6 @@
 									</div>
 								</div>
 							</form>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="x_panel">
-						<div class="x_title">
-							<h2 class="collapse-link">Modifier /Supprimer une Recette<small>Editer une recette existante</small></h2>
-							<ul class="nav navbar-right panel_toolbox">
-								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
-							</ul>
-							<div class="clearfix"></div>
-						</div>
-						<div class="x_content" style="display: none;">
-							<?php foreach ($recettes as $recette) : ?>
-								<a href="index.php?page=editRecette&amp;id=<?= $recette['id'] ?> ">
-									<h1><?= $recette['recette_title'] ?><?= $recette['id'] ?></h1>
-								</a>
-							<?php endforeach ; ?>
 						</div>
 					</div>
 				</div>

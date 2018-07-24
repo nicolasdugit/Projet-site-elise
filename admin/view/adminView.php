@@ -1,4 +1,4 @@
-<?php $title = 'PAGE ADIMN -- Poissonnerie du Port Chez Elise'; ?>
+<?php $title = 'PAGE ADMIN -- Poissonnerie du Port Chez Elise'; ?>
 
 <?php ob_start(); ?>
 	<?php

@@ -129,7 +129,20 @@ function eraseMail($mailId)
 	}
 }
 
-function creationRecette()
+function gestionRecette()
+{
+	$mailManager = new MailManager();
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
+
+	$recetteManager = new RecetteManager();
+	$recettes = $recetteManager->getRecettes();
+	$recettes = $recettes->fetchAll();
+
+	require('view/gestionRecetteView.php');
+}
+
+function creationRecette($recetteTitle)
 {
 	$mailManager = new MailManager();
 	$mailsNonLu = $mailManager->nonMarkedMail();
@@ -142,7 +155,6 @@ function creationRecette()
 	$recetteManager = new RecetteManager();
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
-
 
 	require('view/creationRecetteView.php');
 }
@@ -190,6 +202,21 @@ function modifRecette($recette_title, $recette_subtitle, $recette_time, $recette
 	}
 }
 
+function deleteRecette($recetteId)
+{
+	$recetteManager = new RecetteManager();
+
+	$affectedLines = $recetteManager->deleteRecette($recetteId);
+
+	if ($affectedLines == false) 
+	{
+	    throw new Exception('Impossible de supprimer cette recette !');
+	}
+	else
+	{
+	    header('Location: index.php?page=creationRecette');
+	}
+}
 
 function uploadImage()
 {
@@ -210,20 +237,4 @@ function showImage()
 	$images = $images->fetchAll();
 
 	require('view/selectImageView.php');
-}
-
-function deleteRecette($recetteId)
-{
-	$recetteManager = new RecetteManager();
-
-	$affectedLines = $recetteManager->deleteRecette($recetteId);
-
-	if ($affectedLines == false) 
-	{
-	    throw new Exception('Impossible de supprimer cette recette !');
-	}
-	else
-	{
-	    header('Location: index.php?page=creationRecette');
-	}
 }

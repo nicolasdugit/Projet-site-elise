@@ -72,9 +72,12 @@ try {
 					adminInbox();
 				}
 			}
+			elseif ($_GET['page'] == 'gestionRecette') {
+				gestionRecette();
+			}
 			elseif ($_GET['page'] == 'creationRecette') 
 			{
-				creationRecette();
+				creationRecette($_POST['recette_title']);
 			}
 			elseif ($_GET['page'] == 'editRecette') 
 			{
@@ -116,7 +119,6 @@ try {
 					throw new Exception('Probleme identification');
 				}
 			}
-			
 		}
 		else 
 		{
