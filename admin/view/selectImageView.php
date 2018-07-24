@@ -17,8 +17,8 @@
 		</a>
 
 			<?php foreach ($images as $image) : ?>
-				<div class="col-md-4">
-					<div onclick="infoImage(this)" id="<?= $image['image_name'] ?>" class="img-thumbnail" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;">
+			<div class="col-md-4">
+				<div onclick="infoImage(this)" id="<?= $image['image_name'] ?>" class="img-thumbnail" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;">
 				</div>
 			</div>
 			 <?php endforeach ?>

@@ -78,7 +78,7 @@
 											<input type="hidden" id="recette_image" name="recette_image" value="<?= htmlspecialchars($recette['recette_img']) ?>" required>
 											<img class="img-thumbnail" style="height: auto; width: auto;" src="../<?= htmlspecialchars($recette['recette_img']) ?>" alt="image">
 										</div>
-										<div class="col-md-6">
+										<!-- <div class="col-md-6">
 											<a href="index.php?page=showImage">
 												<div class="tile-stats">
 													<br>
@@ -87,7 +87,7 @@
 													<br>
 												</div>
 											</a>
-										</div>
+										</div> -->
 									</div>
 								</div>
 								<div class="row">

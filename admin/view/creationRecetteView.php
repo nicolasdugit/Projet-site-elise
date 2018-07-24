@@ -43,7 +43,7 @@
 										<div class="form-group col-md-12">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-title" > Titre de la recette <span class="required">*</span></label>
 											<div class="col-md-9 col-sm-9 col-xs-12">
-												<input class="form-control" type="text" id="recette_title" name="recette_title" value="<?= htmlspecialchars($recetteTitle) ?>" required="required">
+												<input class="form-control" type="text" id="recette_title" name="recette_title" required="required">
 											</div>
 										</div>
 										<div class="form-group col-md-12">

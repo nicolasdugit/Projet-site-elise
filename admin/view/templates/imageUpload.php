@@ -1,4 +1,5 @@
- <!-- page content -->
+
+<!-- page content -->
 <div class="">
 	<div class="page-title">
 		<div class="title_left">
@@ -18,8 +19,8 @@
 					<div class="x_content">
 						<p>Vous ne pouvez déposer que 2 images en meme temps. Les images seront stocker dans un serveur mais pas affichées en ligne.</p>
 						<form action="php/upload.php" class="dropzone" id="dropzoneElement">
-							
 						</form>
+						<br>
 						<button class="btn btn-success" id="btnUpload">Télécharger</button>
 						<input type="hidden" id="namePhotos">
 					</div>

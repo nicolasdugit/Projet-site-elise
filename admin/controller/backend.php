@@ -139,10 +139,14 @@ function gestionRecette()
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 
+	$imageManager = new ImageManager();
+	$images = $imageManager->getImages();
+	$images = $images->fetchAll();
+
 	require('view/gestionRecetteView.php');
 }
 
-function creationRecette($recetteTitle)
+function creationRecette()
 {
 	$mailManager = new MailManager();
 	$mailsNonLu = $mailManager->nonMarkedMail();
@@ -217,12 +221,24 @@ function deleteRecette($recetteId)
 	    header('Location: index.php?page=creationRecette');
 	}
 }
+function gestionImage()
+{
+	$mailManager = new MailManager();
+	$mailsNonLu = $mailManager->nonMarkedMail();
+	$mailsNonLu = $mailsNonLu->fetchAll();
 
+	$imageManager = new ImageManager();
+	$images = $imageManager->getImages();
+	$images = $images->fetchAll();
+
+	require('view/gestionImageView.php');
+}
 function uploadImage()
 {
 	$mailManager = new MailManager();
 	$mailsNonLu = $mailManager->nonMarkedMail();
 	$mailsNonLu = $mailsNonLu->fetchAll();
+	
 	require('view/uploadImageView.php');
 }
 
@@ -237,4 +253,20 @@ function showImage()
 	$images = $images->fetchAll();
 
 	require('view/selectImageView.php');
+}
+
+function deleteImage($imageId)
+{
+	$imageManager = new ImageManager();
+
+	$affectedLines = $imageManager->deleteImage($imageId);
+
+	if ($affectedLines == false) 
+	{
+	    throw new Exception('Impossible de supprimer cette image !');
+	}
+	else
+	{
+	    header('Location: index.php?page=gestionImage');
+	}
 }

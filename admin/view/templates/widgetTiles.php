@@ -1,4 +1,5 @@
 
+<!-- widget tiles -->
 <div class="row top_tiles">
 	<?php if (count($mailsNonLu) >0 ) : ?>
 	<a href="index.php?page=inbox">
@@ -23,13 +24,13 @@
 		</div>
 	</a>
 	<?php endif ; ?>
-	<a href="index.php?page=gestionRecette">
+	<a href="index.php?page=creationRecette">
 		<div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
 			<div class="tile-stats">
 				<div class="icon"><i class="fa fa-pencil-square-o"></i></div>
 				<div class="count"><?= count($recettes) ?></div>
-				<h3>Creer / Modifier une Recette</h3>
-				<p>Publier une nouvelle recette en ligne, modifier une recette existante</p>
+				<h3>Creer une Recette</h3>
+				<p>Publier une nouvelle recette en ligne</p>
 			</div>
 		</div>
 	</a>
@@ -44,3 +45,4 @@
 		</div>
 	</a>
 </div>
+<!-- /widget tiles -->

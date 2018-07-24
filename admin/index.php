@@ -55,6 +55,17 @@ try {
 					throw new Exception('Aucun mail à supprimer');
 				}
 			}
+			elseif ($_GET['action'] == 'deleteImage') 
+			{
+				if (isset($_GET['imageId']) && $_GET['imageId'] > 0) 
+				{
+					deleteImage($_GET['imageId']);
+				}
+				else
+				{
+					throw new Exception('Aucune image à supprimer');
+				}
+			}
 			else
 			{
 				throw new Exception('page Non Trouvée');
@@ -77,7 +88,7 @@ try {
 			}
 			elseif ($_GET['page'] == 'creationRecette') 
 			{
-				creationRecette($_POST['recette_title']);
+				creationRecette();
 			}
 			elseif ($_GET['page'] == 'editRecette') 
 			{
@@ -89,6 +100,9 @@ try {
 				{
 					throw new Exception('recette Non Trouvée');
 				}
+			}
+			elseif ($_GET['page'] == 'gestionImage') {
+				gestionImage();
 			}
 			elseif ($_GET['page'] == 'uploadImage') 
 			{

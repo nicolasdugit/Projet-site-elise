@@ -4,6 +4,12 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function(){
+	$("#mailForm").click(function(e){
+		$("#new_mail").val($('#editor-mail').cleanHtml());
+	});
+});
+
 function infoImage(elem) {
 	$("#recette_image").val(elem.id);
 	$toto = 2;
@@ -36,7 +42,7 @@ Dropzone.options.dropzoneElement = {
 		/* On Success, do whatever you want */
 		this.on("success", function(file, responseText) {
 			alert('Success');
-			window.location.href = "index.php?page=showImage";
+			window.location.href = "index.php?page=gestionImage";
 		});
 	}
 }

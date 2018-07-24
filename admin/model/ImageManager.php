@@ -12,4 +12,15 @@ class ImageManager extends Manager
 		
 		return $req;	
 	}
+
+	public function deleteImage($imageId)
+	{
+		$db = $this->dbConnect();
+		$req = $db->prepare('DELETE FROM boot_images WHERE id = :imageId');
+		$affectedLines = $req->execute(array(
+			':imageId' => $imageId,
+		));
+
+		return $affectedLines;
+	}
 }

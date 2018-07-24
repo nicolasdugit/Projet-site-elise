@@ -1,3 +1,5 @@
+
+<!-- left side bar -->
 <div class="col-md-3 left_col menu_fixed">
 	<div class="left_col scroll-view">
 		<div class="navbar nav_title" style="border: 0;">
@@ -30,7 +32,7 @@
 					<li><a href="index.php"><i class="fa fa-home"></i> Accueil</a></li>
 					<li><a href="index.php?page=inbox"><i class="fa fa-envelope-o"></i>	 Messages</a></li>
 					<li><a href="index.php?page=gestionRecette"><i class="fa fa-pencil-square-o"></i> Recettes </a></li>
-					<li><a href="index.php?page=uploadImage"><i class="fa fa-image"></i> Images </a></li>
+					<li><a href="index.php?page=gestionImage"><i class="fa fa-image"></i> Images </a></li>
 						
 
 				</ul>
@@ -47,3 +49,4 @@
 		<!-- /menu footer buttons -->
 	</div>
 </div>
+<!-- /left side bar -->

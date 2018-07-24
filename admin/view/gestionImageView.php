@@ -1,4 +1,4 @@
-<?php $title = 'PAGE ADIMN -Gestion Recette- Poissonnerie du Port Chez Elise'; ?>
+<?php $title = 'PAGE ADIMN -Gestion Image- Poissonnerie du Port Chez Elise'; ?>
 <?php ob_start(); ?>
 	
 	<?php
@@ -10,7 +10,7 @@
 		<div class="">
 			<div class="page-title">
 				<div class="title_left">
-					<h3>Editeur de Recettes</h3>
+					<h3>Gestion des images</h3>
 				</div>
 
 				<div class="title_right">
@@ -30,38 +30,50 @@
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="x_panel">
 						<div class="x_title">
-							<h2 class="collapse-link">Creer une nouvelle recette<small>publication en ligne</small></h2>
+							<h2 class="collapse-link">Voir les images<small> en base de donnée</small></h2>
 							<ul class="nav navbar-right panel_toolbox ">
 								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
 							</ul>
 							<div class="clearfix"></div>
 						</div>
 						<div class="x_content" style="display: none;">
-							<h2 class="btn-warning" style="padding: 10px; text-align: center;">Veuillez selectionner une image.</h2>
 							<?php foreach ($images as $image) : ?>
 							<div class="col-md-4">
-								<div onclick="infoImage(this)" id="<?= $image['image_name'] ?>" class="img-thumbnail" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;">
+								<div id="<?= $image['image_name'] ?>" class="img-thumbnail" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;">
 								</div>
 							</div>
 							 <?php endforeach ?>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-12 col-sm-12 col-xs-12">
 					<div class="x_panel">
 						<div class="x_title">
-							<h2 class="collapse-link">Modifier /Supprimer une Recette<small>Editer une recette existante</small></h2>
-							<ul class="nav navbar-right panel_toolbox">
+							<h2 class="collapse-link">Uploader une image<small> en base de donnée</small></h2>
+							<ul class="nav navbar-right panel_toolbox ">
 								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
 							</ul>
 							<div class="clearfix"></div>
 						</div>
 						<div class="x_content" style="display: none;">
-							<?php foreach ($recettes as $recette) : ?>
-								<a href="index.php?page=editRecette&amp;id=<?= $recette['id'] ?> ">
-									<h1><?= $recette['recette_title'] ?><?= $recette['id'] ?></h1>
+							<a href="index.php?page=uploadImage">Uploader une image</a>
+						</div>
+					</div>
+					<div class="x_panel">
+						<div class="x_title">
+							<h2 class="collapse-link">Supprimer une image<small> de la base de donnée</small></h2>
+							<ul class="nav navbar-right panel_toolbox ">
+								<li><a class="collapse-link"><i class="fa fa-chevron-down"></i></a></li>
+							</ul>
+							<div class="clearfix"></div>
+						</div>
+						<div class="x_content" style="display: none;">
+							<h2 class="btn-danger" style="padding: 10px; text-align: center;">Attention à ne pas supprimer une image utilisée sur le site !</h2>
+							<br>
+							<?php foreach ($images as $image) : ?>
+							<div class="col-md-4">
+								<a href="index.php?action=deleteImage&amp;imageId=<?= $image['id'] ?>" class="img-thumbnail" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;"><?= $image['id'] ?> 
 								</a>
-							<?php endforeach ; ?>
+							</div>
+							 <?php endforeach ?>
 						</div>
 					</div>
 				</div>

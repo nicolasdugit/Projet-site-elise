@@ -65,8 +65,6 @@
 										<div class="col-md-8">
 											<div class="btn-group">
 												<button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Répondre</button>
-												<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
-												<button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
 												<a class="btn btn-sm btn-default" href="index.php?action=eraseMail&amp;mailId=<?= $_GET['id'] ?>"><i class="fa fa-trash-o"></i></a>
 											</div>
 										</div>
@@ -95,6 +93,49 @@
 							</div>
 							<?php endif ; ?>
 							<!-- /MAIL CONTENT -->
+
+							<!-- compose -->
+							<form action="mailto:duquesne.nico@gmail.com" method="GET">
+							<div class="compose col-md-6 col-xs-12">
+								<div class="compose-header">Nouveau message
+									<button type="button" class="close compose-close"><span>×</span></button>
+								</div>
+								<div class="compose-body">
+									<div id="alerts"></div>
+									<div class="btn-toolbar editor" data-role="editor-toolbar" data-target="#editor">
+										
+										<div class="btn-group">
+											<a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
+											<a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
+											<a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
+											<a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
+										</div>
+										<div class="btn-group">
+											<a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
+											<a class="btn" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
+											<a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-dedent"></i></a>
+											<a class="btn" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
+										</div>
+										<div class="btn-group">
+											<a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+											<a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
+											<a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+											<a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
+										</div>
+										<div class="btn-group">
+											<a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
+											<a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
+										</div>
+									</div>
+									<div id="editor-mail" class="editor-wrapper"></div>
+									<input type="hidden" id="new_mail" name="body" required>
+								</div>
+								<div class="compose-footer">
+									<input id="mailForm" class="btn btn-sm btn-success" type="submit" value="Envoyer">
+								</div>
+							</div>
+							</form>
+							<!-- /compose -->
 						</div>
 					</div>
 				</div>
