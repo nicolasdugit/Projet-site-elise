@@ -17,8 +17,6 @@
 						<span class=" fa fa-angle-down"></span>
 					</a>
 					<ul class="dropdown-menu dropdown-usermenu pull-right">
-						<li><a href="javascript:;"> Mon profil</a></li>
-						<li><a href="javascript:;">Aide</a></li>
 						<li><a href="index.php?action=deconnection"><i class="fa fa-sign-out pull-right"></i> Se Déconnecter</a></li>
 					</ul>
 				</li>

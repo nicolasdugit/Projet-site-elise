@@ -27,29 +27,12 @@
 			<div class="menu_section">
 				<h3>General</h3>
 				<ul class="nav side-menu">
-					<li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
-						<ul class="nav child_menu">
-							<li><a href="index.html">Dashboard</a></li>
-							<li><a href="index2.html">Dashboard2</a></li>
-							<li><a href="index3.html">Dashboard3</a></li>
-						</ul>
+					<li><a href="index.php"><i class="fa fa-home"></i> Acceuil</a></li>
+					<li><a href="index.php?page=inbox"><i class="fa fa-envelope-o"></i>	 Messages</a></li>
+					<li><a href="index.php?page=creationRecette"><i class="fa fa-pencil-square-o"></i> Recettes </a></li>
+					<li><a href="index.php?page=uploadImage"><i class="fa fa-image"></i> Images </a></li>
+						
 
-					</li>
-				</ul>
-			</div>
-			<div class="menu_section">
-				<h3>Live On</h3>
-				<ul class="nav side-menu">
-					<li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
-						<ul class="nav child_menu">
-							<li><a href="e_commerce.html">E-commerce</a></li>
-							<li><a href="projects.html">Projects</a></li>
-							<li><a href="project_detail.html">Project Detail</a></li>
-							<li><a href="contacts.html">Contacts</a></li>
-							<li><a href="profile.html">Profile</a></li>
-						</ul>
-
-					</li>
 				</ul>
 			</div>
 		</div>
@@ -57,15 +40,6 @@
 
 		<!-- /menu footer buttons -->
 		<div class="sidebar-footer hidden-small">
-			<a data-toggle="tooltip" data-placement="top" title="Settings">
-				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-			</a>
-			<a data-toggle="tooltip" data-placement="top" title="FullScreen">
-				<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-			</a>
-			<a data-toggle="tooltip" data-placement="top" title="Lock">
-				<span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
-			</a>
 			<a data-toggle="tooltip" data-placement="top" title="Logout" href="index.php?action=deconnection">
 				<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
 			</a>
