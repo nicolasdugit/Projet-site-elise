@@ -7,30 +7,30 @@
 
 <?php require('view/frontend/templates/headerSecondary.php'); ?>
 
-<div id="colorlib-contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-				<span class="icon"><i class="flaticon-cutlery"></i></span>
-				<h2>Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</h2>
-			</div>
-		</div>
-		<div class="row">
-			<?php foreach ($recettes as $recette) : ?>
-			<div class="col-md-4">
-				<article class="article-entry">
-					<a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>" class="blog-img" style="background-image: url(<?= $recette['recette_img'] ?>);"></a>
-					<div class="desc">
-						<p class="admin"><span>Ecrit par :</span> <span><?= htmlspecialchars($recette['recette_author']) ?></span></p>
-						<h2><a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>"><?= htmlspecialchars($recette['recette_title']) ?></a></h2>
-						<p><?= htmlspecialchars($recette['recette_subtitle']) ?></p>
+			<div id="colorlib-contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+							<span class="icon"><i class="flaticon-cutlery"></i></span>
+							<h2>Découvrez régulièrement ici les recettes d'Elise. Quelques idées simples pour déguster les produits du bassin.</h2>
+						</div>
 					</div>
-				</article>
+					<div class="row">
+<?php foreach ($recettes as $recette) : ?>
+						<div class="col-md-4">
+							<article class="article-entry">
+								<a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>" class="blog-img" style="background-image: url(<?= $recette['recette_img'] ?>);"></a>
+								<div class="desc">
+									<p class="admin"><span>Ecrit par :</span> <span><?= htmlspecialchars($recette['recette_author']) ?></span></p>
+									<h2><a href="index.php?page=uneRecette&amp;recetteId=<?= $recette['id'] ?>"><?= htmlspecialchars($recette['recette_title']) ?></a></h2>
+									<p><?= htmlspecialchars($recette['recette_subtitle']) ?></p>
+								</div>
+							</article>
+						</div>
+<?php endforeach ; ?>
+					</div>
+				</div>
 			</div>
-			<?php endforeach ; ?>
-		</div>
-	</div>
-</div>
 
 <?php $content = ob_get_clean(); ?>
 

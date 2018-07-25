@@ -23,18 +23,16 @@
 							<h2>FORMULE 20 EUROS</h2>
 						</div>
 						<div class="col-md-12 animate-box">
-							<span>
-								<ul>
-									<li>6 Huîtres n°4</li>
-									<li>1/2 Tourteau</li>
-									<li>2 Langoustines</li>
-									<li>5 Crevettes de Madagascar</li>
-									<li>6 Bulots</li>
-									<li>Crevettes Grises</li>
-									<li>Bigorneaux</li>
-									<li>Citron, mayonnaise</li>
-								</ul>
-							</span>
+							<ul>
+								<li>6 Huîtres n°4</li>
+								<li>1/2 Tourteau</li>
+								<li>2 Langoustines</li>
+								<li>5 Crevettes de Madagascar</li>
+								<li>6 Bulots</li>
+								<li>Crevettes Grises</li>
+								<li>Bigorneaux</li>
+								<li>Citron, mayonnaise</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -65,21 +63,19 @@
 							<h2>FORMULE 24 EUROS</h2>
 						</div>
 						<div class="col-md-12 animate-box">
-							<span>
-								<ul>
-									<li>6 Huîtres n°4</li>
-									<li>1/2 Tourteau</li>
-									<li>2 Langoustines</li>
-									<li>5 Crevettes de Madagascar</li>
-									<li>6 Bulots</li>
-									<li>3 Palourdes</li>
-									<li>3 Amandes</li>
-									<li>3 Moules</li>
-									<li>Crevettes Grises</li>
-									<li>Bigorneaux</li>
-									<li>Citron, mayonnaise</li>
-								</ul>
-							</span>
+							<ul>
+								<li>6 Huîtres n°4</li>
+								<li>1/2 Tourteau</li>
+								<li>2 Langoustines</li>
+								<li>5 Crevettes de Madagascar</li>
+								<li>6 Bulots</li>
+								<li>3 Palourdes</li>
+								<li>3 Amandes</li>
+								<li>3 Moules</li>
+								<li>Crevettes Grises</li>
+								<li>Bigorneaux</li>
+								<li>Citron, mayonnaise</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -94,19 +90,17 @@
 							<h2>FORMULE 30 EUROS</h2>
 						</div>
 						<div class="col-md-12 animate-box">
-							<span>
-								<ul>
-									<li>6 Huîtres n°4</li>
-									<li>1/2 Homard</li>
-									<li>2 Langoustines</li>
-									<li>5 Crevettes de Madagascar</li>
-									<li>6 Bulots</li>
-									<li>3 Amandes</li>
-									<li>Crevettes Grises</li>
-									<li>Bigorneaux</li>
-									<li>Citron, mayonnaise</li>
-								</ul>
-							</span>
+							<ul>
+								<li>6 Huîtres n°4</li>
+								<li>1/2 Homard</li>
+								<li>2 Langoustines</li>
+								<li>5 Crevettes de Madagascar</li>
+								<li>6 Bulots</li>
+								<li>3 Amandes</li>
+								<li>Crevettes Grises</li>
+								<li>Bigorneaux</li>
+								<li>Citron, mayonnaise</li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -137,17 +131,15 @@
 							<h2>PLATEAU "TOUT CUITS"</h2>
 						</div>
 						<div class="col-md-12 animate-box">
-							<span>
-								<ul>
-									<li>6 Crevettes Equateur</li>
-									<li>2 Pinces de crabe </li>
-									<li>2 Langoustines</li>
-									<li>6 Bulots</li>
-									<li>Crevettes Grises</li>
-									<li>Bigorneaux</li>
-									<li>Citron, mayonnaise</li>
-								</ul>
-							</span>
+							<ul>
+								<li>6 Crevettes Equateur</li>
+								<li>2 Pinces de crabe </li>
+								<li>2 Langoustines</li>
+								<li>6 Bulots</li>
+								<li>Crevettes Grises</li>
+								<li>Bigorneaux</li>
+								<li>Citron, mayonnaise</li>
+							</ul>
 						</div>
 					</div>
 				</div>
