@@ -10,4 +10,4 @@
 		</div>
 	</div>
 </div>
- <div id='map' style=" margin-bottom: 50px;" class="colorlib-map"></div>
+<div id='map' style=" margin-bottom: 50px;" class="colorlib-map"></div>

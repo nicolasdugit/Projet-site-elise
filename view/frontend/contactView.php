@@ -61,13 +61,9 @@
 				</div>
 			</div>
 		</div>
-		<!-- mapbox -->
-		<div class="row">
-			<div class="col-md-12">
-				<div id='map'></div>
-			</div>
-		</div>
 	</div>
+	<!-- mapbox -->
+	<div id='map' style="height: 600px !important;"  class="colorlib-map"></div>
 </div>
 
 <?php $content = ob_get_clean(); ?>
