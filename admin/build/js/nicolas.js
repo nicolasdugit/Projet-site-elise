@@ -4,11 +4,7 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function(){
-	$("#mailForm").click(function(e){
-		$("#new_mail").val($('#editor-mail').cleanHtml());
-	});
-});
+
 
 function infoImage(elem) {
 	$("#recette_image").val(elem.id);

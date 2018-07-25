@@ -37,7 +37,8 @@
 						<!-- MAIL LIST -->
 						<div class="row">
 							<div class="col-sm-3 mail_list_column">
-								<button id="compose" class="btn btn-sm btn-success btn-block" type="button">NOUVEAU</button>
+								<!-- <button id="compose" class="btn btn-sm btn-success btn-block" type="button">NOUVEAU</button> -->
+								<a href="mailto:" class="btn btn-sm btn-success btn-block">NOUVEAU</a>
 								<?php foreach ($mails as $mail) : ?>
 									<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">
 										<div class="mail_list">
@@ -64,7 +65,7 @@
 									<div class="mail_heading row">
 										<div class="col-md-8">
 											<div class="btn-group">
-												<button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Répondre</button>
+												<a class="btn btn-sm btn-primary" href="mailto:<?=$mailOne['mail_mail'] ?>"><i class="fa fa-reply"></i> Répondre</a>
 												<a class="btn btn-sm btn-default" href="index.php?action=eraseMail&amp;mailId=<?= $_GET['id'] ?>"><i class="fa fa-trash-o"></i></a>
 											</div>
 										</div>
@@ -95,7 +96,7 @@
 							<!-- /MAIL CONTENT -->
 
 							<!-- compose -->
-							<form action="mailto:duquesne.nico@gmail.com" method="GET">
+							<form action="mailto:" method="GET">
 							<div class="compose col-md-6 col-xs-12">
 								<div class="compose-header">Nouveau message
 									<button type="button" class="close compose-close"><span>×</span></button>
