@@ -9,7 +9,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="">
 					<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-						<img src="view/images/img.jpg" alt="">
+						<img src="view/images/user.png" alt="">
 						<?php if (isset($_SESSION['user_name'])) : ?>
 							<?= strtoupper(htmlspecialchars($_SESSION['user_name'])) ?>
 						<?php else : ?>
@@ -31,7 +31,7 @@
 						<?php foreach (array_slice($mailsNonLu, 0, 5) as $mail) : ?>
 							<li>
 								<a href="index.php?page=inbox&amp;id=<?= $mail['id'] ?>">
-									<span class="image"><img src="view/images/img.jpg" alt="Profile Image" /></span>
+									<span class="image"><i class="fa fa-envelope-o"></i></span>
 									<span>
 										<span><?= htmlspecialchars($mail['mail_name']) ?></span>
 										<span class="time"><?=$mail['mail_date'] ?></span>
