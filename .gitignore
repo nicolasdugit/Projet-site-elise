@@ -1,1 +1,3 @@
 model/Manager.php
+admin/.htaccess
+admin/.htpasswd
