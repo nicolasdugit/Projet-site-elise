@@ -1,8 +1,8 @@
 <?php
-use Poissonneriedupost\Elise\Backend\model\MailManager;
-use Poissonneriedupost\Elise\Backend\model\UserManager;
-use Poissonneriedupost\Elise\Backend\model\RecetteManager;
-use Poissonneriedupost\Elise\Backend\model\ImageManager;
+use Poissonnerieduport\Elise\Backend\model\MailManager;
+use Poissonnerieduport\Elise\Backend\model\UserManager;
+use Poissonnerieduport\Elise\Backend\model\RecetteManager;
+use Poissonnerieduport\Elise\Backend\model\ImageManager;
 
 require_once('model/MailManager.php');
 require_once('model/UserManager.php');

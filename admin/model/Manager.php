@@ -1,5 +1,5 @@
 <?php
-namespace Poissonneriedupost\Elise\Backend\Model;
+namespace Poissonnerieduport\Elise\Backend\Model;
 
 class Manager
 {

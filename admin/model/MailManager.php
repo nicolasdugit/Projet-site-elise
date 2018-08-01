@@ -1,5 +1,5 @@
 <?php
-namespace Poissonneriedupost\Elise\Backend\Model;
+namespace Poissonnerieduport\Elise\Backend\Model;
 
 require_once("Manager.php");
 
