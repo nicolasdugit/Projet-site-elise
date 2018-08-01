@@ -1,6 +1,6 @@
 <?php
-use Poissonneriedupost\Elise\Frontend\model\MailManager;
-use Poissonneriedupost\Elise\Frontend\model\RecetteManager;
+use Poissonnerieduport\Elise\Frontend\model\MailManager;
+use Poissonnerieduport\Elise\Frontend\model\RecetteManager;
 
 require_once('model/MailManager.php');
 require_once('model/RecetteManager.php');
