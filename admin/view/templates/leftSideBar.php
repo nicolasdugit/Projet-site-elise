@@ -7,21 +7,19 @@
 		</div>
 		<div class="clearfix"></div>
 		<!-- menu profile quick info -->
+<?php if (isset($_SESSION['user_name'])) : ?>
 		<div class="profile clearfix">
 			<div class="profile_pic">
-				<img src="view/images/user.png" alt="..." class="img-circle profile_img">
+				<img src="<?= $_SESSION['user_picture'] ?>" alt="user_profile" class="img-circle profile_img">
 			</div>
 			<div class="profile_info">
 				<span>Bienvenue,</span>
 				<h2>
-					<?php if (isset($_SESSION['user_name'])) : ?>
-						<?= strtoupper(htmlspecialchars($_SESSION['user_name'])) ?>
-					<?php else : ?>
-						<?php throw new Exception('Probleme identification'); ?>
-					<?php endif ; ?>
+					<?= strtoupper(htmlspecialchars($_SESSION['user_name'])) ?>
 				</h2>
 			</div>
 		</div>
+<?php endif ; ?>
 		<!-- /menu profile quick info -->
 		<br>
 		<!-- sidebar menu -->
