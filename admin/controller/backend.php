@@ -41,6 +41,8 @@ function connectionAdmin($pseudo, $pass)
 	$userManager = new UserManager();
 
 	$passTest = $userManager->connection($pseudo, $pass);
+	$userInfo = $userManager->getUser($pseudo);
+	
 
 	if ($pass == $passTest['user_pass']) {
 		$isPassCorrect = true;
@@ -60,6 +62,8 @@ function connectionAdmin($pseudo, $pass)
 			session_start();
 			$_SESSION['user_status'] = $passTest['user_status'];
 			$_SESSION['user_name'] = $pseudo;
+			$_SESSION['user_picture'] = $userInfo['user_picture'];
+			$_SESSION['user_mail'] = $userInfo['user_mail'];
 			header('Location: index.php');
 		}
 		else
