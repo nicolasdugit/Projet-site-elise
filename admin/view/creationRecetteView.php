@@ -59,6 +59,9 @@
 												<input class="form-control" type="text" id="recette_author" name="recette_author" value="<?= ucfirst($_SESSION['user_name']) ?>" required="required">
 											</div>
 										</div>
+										<div class="form-group col-md-12">
+											<input type="hidden" id="id_real_author" name="id_real_author" value="<?= ($_SESSION['user_id']) ?>" required>
+										</div>
 									</div>
 								</div>
 								<div class="col-md-8">

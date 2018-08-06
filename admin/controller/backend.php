@@ -64,6 +64,7 @@ function connectionAdmin($pseudo, $pass)
 			$_SESSION['user_name'] = $pseudo;
 			$_SESSION['user_picture'] = $userInfo['user_picture'];
 			$_SESSION['user_mail'] = $userInfo['user_mail'];
+			$_SESSION['user_id'] = $userInfo['id'];
 			header('Location: index.php');
 		}
 		else
@@ -167,11 +168,11 @@ function creationRecette()
 	require('view/creationRecetteView.php');
 }
 
-function publishRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image)
+function publishRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image, $recette_real_author)
 {
 	$recetteManager = new RecetteManager();
 
-	$affectedLines = $recetteManager->newRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image);
+	$affectedLines = $recetteManager->newRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image, $recette_real_author);
 	if ($affectedLines == false) 
 	{
 		throw new Exception('Impossible d\'ajouter la recette !');
@@ -180,6 +181,12 @@ function publishRecette($recette_title, $recette_subtitle, $recette_time, $recet
 	{
 		header('Location: index.php?page=creationRecette');
 	}
+}
+
+function addRealAuthor($id_real_author)
+{
+	$recetteManager = new RecetteManager();
+	$addRealAuthor = $recetteManager->addRealAuthor($id_real_author);
 }
 
 function editRecette($recette_id)

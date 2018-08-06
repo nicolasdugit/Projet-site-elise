@@ -5,10 +5,10 @@ require_once("Manager.php");
 
 class RecetteManager extends Manager
 {
-	public function newRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image)
+	public function newRecette($recette_title, $recette_subtitle, $recette_time, $recette_portion, $recette_instruction, $recette_author, $recette_image, $recette_real_author)
 	{
 		$db = $this->dbConnect();
-		$req = $db->prepare('INSERT INTO boot_recette(recette_title, recette_subtitle, recette_time, recette_portion, recette_instruction, recette_author, recette_img) VALUES (:recette_title, :recette_subtitle, :recette_time, :recette_portion, :recette_instruction, :recette_author, :recette_image)');
+		$req = $db->prepare('INSERT INTO boot_recette(recette_title, recette_subtitle, recette_time, recette_portion, recette_instruction, recette_author, recette_img, recette_real_author) VALUES (:recette_title, :recette_subtitle, :recette_time, :recette_portion, :recette_instruction, :recette_author, :recette_image, :recette_real_author)');
 		$affectedLines = $req->execute(array(
 			':recette_title' => $recette_title,
 			':recette_subtitle' => $recette_subtitle,
@@ -17,6 +17,7 @@ class RecetteManager extends Manager
 			':recette_instruction' => $recette_instruction,
 			':recette_author' => $recette_author,
 			':recette_image' => $recette_image,
+			':recette_real_author' => $recette_real_author,
 		));
 
 		return $affectedLines;
