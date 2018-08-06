@@ -17,6 +17,7 @@
 		<link href="vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
 		<!-- Custom Theme Style -->
 		<link href="build/css/custom.min.css" rel="stylesheet">
+		<link href="build/css/nicolas.css" rel="stylesheet">
 	</head>
 	<body class="nav-md">
 		<div class="container body">
