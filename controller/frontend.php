@@ -77,7 +77,15 @@ function uneRecettePage($recetteId)
 	$recettes = $recetteManager->getRecettes();
 	$recettes = $recettes->fetchAll();
 
-	require('view/frontend/recetteBlogView.php');
+	if (!empty($recette))
+	{
+		require('view/frontend/recetteBlogView.php');
+	}
+	else 
+	{
+		throw new Exception('Cette recette n\'existe pas !');
+	}
+
 }
 
 function sentMail($subject, $name, $mail, $content)
