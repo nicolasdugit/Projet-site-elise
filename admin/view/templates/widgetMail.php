@@ -1,6 +1,5 @@
 
 <!-- widget mail -->
-<div class="row">
 	<div class="col-md-4">
 		<div class="x_panel">
 			<div class="x_title">
@@ -25,5 +24,4 @@
 			</div>
 		</div>
 	</div>
-</div>
 <!-- /widget mail -->

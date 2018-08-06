@@ -8,7 +8,10 @@
 	<div class="right_col" role="main">
 		<div class="">
 			<?php require('view/templates/widgetTiles.php'); ?>
-			<?php require('view/templates/widgetMail.php'); ?>
+			<div class="row">
+				<?php require('view/templates/widgetMail.php'); ?>
+				<?php require('view/templates/widgetRecette.php'); ?>
+			</div>
 		</div>
 	</div>
 
