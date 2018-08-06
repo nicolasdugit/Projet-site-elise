@@ -7,7 +7,7 @@ $(document).ready(function(){
 function infoImage(elem) {
 	$("#recette_image").val(elem.id);
 	window.location.href = "index.php?page=creationRecette&id=" + elem.id;
-}
+};
 
 Dropzone.options.dropzoneElement = {
 	maxFiles: 2,

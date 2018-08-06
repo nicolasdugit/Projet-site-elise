@@ -27,7 +27,27 @@
 						</div>
 						<div class="x_content">
 							<form method="post" action="index.php?action=publishRecette">
-								<div class="col-md-4">
+								<div class="col-md-6">
+									<div class="col-md-12">
+									<?php if (isset($_GET['id'])) : ?>
+										<div class="col-md-6">
+											<input type="hidden" id="recette_image" name="recette_image" value="<?= $_GET['id'] ?>" required>
+											<img class="img-thumbnail" style="height: auto; width: auto;" src="../<?= $_GET['id'] ?>" alt="image">
+										</div>
+									<?php endif ; ?>
+										<div class="col-md-6">
+											<a href="index.php?page=showImage">
+												<div class="tile-stats">
+													<br>
+													<div class="icon"><i class="fa fa-image"></i></div>
+														<h3>Selectionner une <br>image</h3>
+													<br>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div id="info_recette" class="col-md-4">
 									<div class="form-horizontal form-label-left">
 										<div class="form-group col-md-12">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12" for="recette-title" > Titre de la recette <span class="required">*</span></label>
@@ -64,27 +84,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-8">
-									<div class="col-md-12">
-									<?php if (isset($_GET['id'])) : ?>
-										<div class="col-md-6">
-											<input type="hidden" id="recette_image" name="recette_image" value="<?= $_GET['id'] ?>" required>
-											<img class="img-thumbnail" style="height: auto; width: auto;" src="../<?= $_GET['id'] ?>" alt="image">
-										</div>
-									<?php endif ; ?>
-										<div class="col-md-6">
-											<a href="index.php?page=showImage">
-												<div class="tile-stats">
-													<br>
-													<div class="icon"><i class="fa fa-image"></i></div>
-														<h3>Selectionner une <br>image</h3>
-													<br>
-												</div>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="row">
+								<div id="content_recette" class="row">
 									<div class="col-md-12">
 										<label for="">Etapes de la recette :</label>
 										<div class="btn-toolbar editor" data-role="editor-toolbar" data-target="#editor-one">
@@ -120,6 +120,7 @@
 									</div>
 								</div>
 							</form>
+							<script src="build/js/recette.js"></script>
 						</div>
 					</div>
 				</div>

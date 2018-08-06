@@ -12,6 +12,7 @@
 				<?php require('view/templates/widgetMail.php'); ?>
 				<?php require('view/templates/widgetRecette.php'); ?>
 			</div>
+			<?php require('view/templates/widgetCommandes.php'); ?>
 		</div>
 	</div>
 
