@@ -10,7 +10,7 @@
 <?php if (isset($_SESSION['user_name'])) : ?>
 		<div class="profile clearfix">
 			<div class="profile_pic">
-				<img src="<?= $_SESSION['user_picture'] ?>" alt="user_profile" class="img-circle profile_img">
+				<img src="view/images/<?= $_SESSION['user_picture'] ?>" alt="user_profile" class="img-thumbnail profile_img">
 			</div>
 			<div class="profile_info">
 				<span>Bienvenue,</span>

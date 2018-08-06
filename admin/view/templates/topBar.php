@@ -9,7 +9,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="">
 					<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-						<img src="view/images/user.png" alt="">
+						<img src="view/images/<?= $_SESSION['user_picture'] ?>" alt="profile_picture">
 						<?php if (isset($_SESSION['user_name'])) : ?>
 							<?= strtoupper(htmlspecialchars($_SESSION['user_name'])) ?>
 						<?php else : ?>
