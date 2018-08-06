@@ -246,6 +246,22 @@ function uploadImage()
 	require('view/uploadImageView.php');
 }
 
+function insertImage($image_name)
+{
+	$imageManager = new ImageManager();
+
+	$affectedLines = $imageManager->insertImage($image_name);
+
+	if ($affectedLines == false) 
+	{
+	    throw new Exception('Impossible d\'inserer cette image !');
+	}
+	else
+	{
+	    header('Location: index.php?page=gestionImage');
+	}
+}
+
 function showImage()
 {
 	$mailManager = new MailManager();

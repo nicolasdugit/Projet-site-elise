@@ -23,4 +23,15 @@ class ImageManager extends Manager
 
 		return $affectedLines;
 	}
+
+	public function insertImage($image_name)
+	{
+		$db = $this->dbConnect();
+		$req = $db->prepare('INSERT INTO boot_images(image_name) VALUES (:image_name)');
+		$affectedLines = $req->execute(array(
+			':image_name' => $image_name,
+		));
+
+		return $affectedLines;
+	}
 }

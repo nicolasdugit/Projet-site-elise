@@ -18,7 +18,7 @@
 					</div>
 					<div class="x_content">
 						<p>Vous ne pouvez déposer que 2 images en meme temps. Les images seront stocker dans un serveur mais pas affichées en ligne.</p>
-						<form action="php/upload.php" class="dropzone" id="dropzoneElement">
+						<form action="index.php?action=insertImage" method="post" class="dropzone" id="dropzoneElement">
 						</form>
 						<br>
 						<button class="btn btn-success" id="btnUpload">Télécharger</button>

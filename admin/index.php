@@ -55,6 +55,27 @@ try {
 					throw new Exception('Aucun mail à supprimer');
 				}
 			}
+			elseif ($_GET['action'] == 'insertImage')
+			{
+				if(!empty($_FILES))
+				{
+					$tempFile = $_FILES['file']['tmp_name'];
+					$extension = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
+
+					// $targetFile = 'build/'.strtotime(date('Y-m-d H:i:s')).'.'.$extension;
+					$targetFile = '../public/images/recettes/'.rand(100,1000000).'.'.$extension;
+					move_uploaded_file($tempFile, $targetFile);
+
+					$newNameTemp = pathinfo($targetFile, PATHINFO_BASENAME);
+					$newName = 'public/images/recettes/'.$newNameTemp;
+
+					insertImage($newName);
+				}
+				else
+				{
+					throw new Exception('Aucune image à uploader');
+				}
+			}
 			elseif ($_GET['action'] == 'deleteImage') 
 			{
 				if (isset($_GET['imageId']) && $_GET['imageId'] > 0) 
