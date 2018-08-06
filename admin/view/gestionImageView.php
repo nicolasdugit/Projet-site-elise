@@ -57,8 +57,9 @@
 							<h2 class="btn-danger" style="padding: 10px; text-align: center;">Attention à ne pas supprimer une image utilisée sur le site !</h2>
 							<br>
 							<?php foreach ($images as $image) : ?>
-							<div class="col-md-4">
-								<a href="index.php?action=deleteImage&amp;imageId=<?= $image['id'] ?>" class="img-thumbnail" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;"><?= $image['id'] ?> 
+							<div class="col-md-4 col-sm-6">
+								<a href="index.php?action=deleteImage&amp;imageId=<?= $image['id'] ?>">
+									<img src="../<?= $image['image_name'] ?>" alt="" style="width: 100%; margin-bottom: 10px;">
 								</a>
 							</div>
 							 <?php endforeach ?>
