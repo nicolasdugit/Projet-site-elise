@@ -55,7 +55,7 @@
 									<div class="mail_heading row">
 										<div class="col-md-8">
 											<div class="btn-group">
-												<a class="btn btn-sm btn-primary" href="mailto:<?= $mailOne['mail_mail'] ?>"><i class="fa fa-reply"></i> Répondre</a>
+												<a class="btn btn-sm btn-primary" href="mailto:<?= htmlspecialchars($mailOne['mail_mail']) ?>"><i class="fa fa-reply"></i> Répondre</a>
 												<a class="btn btn-sm btn-default" href="index.php?action=eraseMail&amp;mailId=<?= $_GET['id'] ?>"><i class="fa fa-trash-o"></i></a>
 											</div>
 										</div>
@@ -70,7 +70,7 @@
 										<div class="row">
 											<div class="col-md-12">
 												<strong><?= htmlspecialchars($mailOne['mail_name'])?></strong>
-												<span>(<?= $mailOne['mail_mail'] ?>)</span> pour
+												<span>(<?= htmlspecialchars($mailOne['mail_mail']) ?>)</span> pour
 												<strong>Poissonnerie du Port</strong>
 												<a class="sender-dropdown"><i class="fa fa-chevron-down"></i></a>
 											</div>
