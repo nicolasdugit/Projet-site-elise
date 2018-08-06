@@ -6,9 +6,6 @@
 	<body>
 <?php include('view/frontend/templates/navbar.php'); ?>
 		<div id="colorlib-page">
-			<?= $content ?>
-			<!-- footer 1 -->
-<?php include('view/frontend/templates/footer.php'); ?>
 		</div>
 		<!-- jQuery -->
 		<script src="public/js/jquery.min.js"></script>
