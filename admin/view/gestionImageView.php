@@ -12,17 +12,6 @@
 				<div class="title_left">
 					<h3>Gestion des images</h3>
 				</div>
-
-				<!-- <div class="title_right">
-					<div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search for...">
-							<span class="input-group-btn">
-								<button class="btn btn-default" type="button">Go!</button>
-							</span>
-						</div>
-					</div>
-				</div> -->
 			</div>
 
 			<div class="clearfix"></div>
@@ -38,9 +27,8 @@
 						</div>
 						<div class="x_content" style="display: none;">
 							<?php foreach ($images as $image) : ?>
-							<div class="col-md-4">
-								<div id="<?= $image['image_name'] ?>" class="img-thumbnail" style="background-image: url(' ../<?= $image['image_name'] ?> '); background-size: 100%; background-position: center; width: 100%; height: 200px;">
-								</div>
+							<div class="col-md-4 col-sm-6">
+								<img id="<?= $image['image_name'] ?>" src="../<?= $image['image_name'] ?>" alt="" style="width: 100%; margin-bottom: 10px;" >
 							</div>
 							 <?php endforeach ?>
 						</div>
