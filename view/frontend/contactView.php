@@ -7,6 +7,8 @@
 
 <?php include('view/frontend/templates/contactBar.php'); ?>
 
+
+
 			<div id="colorlib-contact">
 				<div class="container">
 					<div class="row">
