@@ -89,7 +89,7 @@
 						<div class="col-md-4 animate-box">
 							<div class="dish-wrap">
 								<div class="wrap">
-									<div class="dish-img" style="background-image: url(public/images/burger.jpg);"></div>
+									<div class="dish-img" style="background-image: url(public/images/burgers.jpg);"></div>
 									<div class="desc">
 										<h2><a href="#">BURGER DU BASSIN</a></h2>
 									</div>
